@@ -82,10 +82,3 @@ export const experiences = [
 ]
 
 
-export const projets = [
-    {
-        title: "FindOrDraw",
-        link: "",
-
-    }
-]

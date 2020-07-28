@@ -1,6 +1,6 @@
 import React from "react";
 
-const Biseau = ({height, color, top, right, base = 0}) => {
+const Biseau = ({height, color, top, right, base = 1}) => {
 
     let pos
 

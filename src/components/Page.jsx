@@ -13,10 +13,17 @@ import {
 
 import imag from '../static/imag.png'
 import aws from '../static/aws.png'
+import docker from '../static/docker.png'
+import mongo from '../static/mongo.png'
+import node from '../static/node.png'
+import react from '../static/react.png'
+
 import Experience from "./Experience";
 import Formation from "./Formation";
 import {experiences, formations} from "../data/life";
 import Biseau from "./Biseau";
+import {projets} from "../data/projects";
+import Projet from "./Projet";
 
 
 const Info = ({children, icon}) => {
@@ -79,21 +86,31 @@ export default (props) => {
 
             <div className={'col'}>
 
-                <Biseau height={7} color={'#bfdaf0'} top={true} />
-                <div className={'col-section col-section-color'} style={{height: "5cm"}}>
+                <Biseau height={7} color={'#bfdaf0'} top={true}/>
+                <div className={'col-section col-section-color'} >
                     <h2>Mes technos</h2>
+                    <div className={'logo-line'}>
+                        <img src={react} className={'logo-bubble'} height={50}/>
+                        <img src={node} className={'logo-bubble'} height={50}/>
+                        <img src={docker} className={'logo-bubble'} height={50}/>
+                    </div>
+                    <div className={'logo-line'}>
+                        <img src={mongo} className={''} height={50}/>
+                    </div>
                 </div>
-                <Biseau height={7} color={'#bfdaf0'} right={true} />
+                <Biseau height={7} color={'#bfdaf0'} right={true}/>
 
                 <div className={'col-section'} style={{height: "3cm"}}>
 
                 </div>
 
-                <Biseau height={7} color={'#bfdaf0'} top={true} />
-                <div className={'col-section col-section-color'} style={{height: "13cm"}}>
+                <Biseau height={7} color={'#bfdaf0'} top={true}/>
+                <div className={'col-section col-section-color'} >
                     <h2>Mes projets</h2>
+
+                    {projets.map(p => <Projet projet={p}/>)}
                 </div>
-                <Biseau height={7} color={'#bfdaf0'} right={true} />
+                <Biseau height={7} color={'#bfdaf0'} right={true}/>
 
             </div>
 
