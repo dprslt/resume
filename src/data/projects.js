@@ -1,7 +1,6 @@
 import findOrDraw from '../static/findOrDraw.png'
 import dsc from '../static/dsc.png'
 import kyc from '../static/kyc.png'
-import domopi from '../static/domopi.png'
 import aurora from '../static/aurora.png'
 import tpth from '../static/tpth.png'
 import lego from '../static/lego.png'

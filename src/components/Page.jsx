@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faBirthdayCake,
     faCar,
-    faEnvelope, faGlobe,
+    faEnvelope,
     faGlobeEurope, faHeart,
     faPhone,
     faUniversity
@@ -105,12 +105,12 @@ export default (props) => {
                     <div className={'col-section'}>
                         <h2 className={'col-title'}>Ma <FontAwesomeIcon icon={faHeart} className={'red'}/> stack</h2>
                         <div className={'logo-line'}>
-                            <img src={react} className={'logo-bubble'} height={50}/>
-                            <img src={node} className={'logo-bubble'} height={50}/>
-                            <img src={docker} className={'logo-bubble'} height={50}/>
+                            <img src={react} className={'logo-bubble'} alt={'React JS'} height={50}/>
+                            <img src={node} className={'logo-bubble'} alt={'NodeJS'} height={50}/>
+                            <img src={docker} className={'logo-bubble'} alt={'Docker'} height={50}/>
                         </div>
                         <div className={'logo-line'}>
-                            <img src={mongo} className={''} height={40}/>
+                            <img src={mongo} className={''} alt={'Mongo DB'} height={40}/>
                         </div>
                     </div>
 
