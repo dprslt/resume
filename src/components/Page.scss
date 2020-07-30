@@ -8,8 +8,10 @@ $light-color: #bfdaf0;
 
   -webkit-print-color-adjust: exact;
 
-  width: 21cm;
-  height: 29.7cm;
+  //@media print{
+    width: 21cm;
+    height: 29.7cm;
+  //}
 
   background-color: white;
 
@@ -137,14 +139,14 @@ $light-color: #bfdaf0;
 
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-evenly;
 
       background-color: $light-color;
       position: relative;
       margin-top: -1.5em;
 
       .col-section {
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
         padding: 0.1em 1em;
       }
 
@@ -321,7 +323,7 @@ $light-color: #bfdaf0;
           content: '';
           position: absolute;
           border-left: solid 2px $accent-color;
-          opacity: 1;
+          opacity: .6;
           left: 0;
           top: 0;
           bottom: 0;
@@ -362,7 +364,8 @@ $light-color: #bfdaf0;
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background-color: $main-color;
+        background-color: $accent-color;
+        opacity: 1;
         position: absolute;
         left: calc(-1em - 2px);
         top: 1.3em;
@@ -487,7 +490,7 @@ $light-color: #bfdaf0;
             width: 6px;
             height: 6px;
             border-radius: 50%;
-            background-color: $main-color;
+            background-color: $accent-color;
             position: absolute;
             left: calc(-1rem - 2px);
             top: calc(50% - 3px);
