@@ -1,35 +1,33 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.4dde8fcc.chunk.css",
-    "main.js": "/resume/static/js/main.6904b6f9.chunk.js",
-    "main.js.map": "/resume/static/js/main.6904b6f9.chunk.js.map",
+    "main.css": "/resume/static/css/main.b3489aea.chunk.css",
+    "main.js": "/resume/static/js/main.53254fbe.chunk.js",
+    "main.js.map": "/resume/static/js/main.53254fbe.chunk.js.map",
     "runtime-main.js": "/resume/static/js/runtime-main.6c7e8381.js",
     "runtime-main.js.map": "/resume/static/js/runtime-main.6c7e8381.js.map",
-    "static/js/2.0bf35bcb.chunk.js": "/resume/static/js/2.0bf35bcb.chunk.js",
-    "static/js/2.0bf35bcb.chunk.js.map": "/resume/static/js/2.0bf35bcb.chunk.js.map",
+    "static/js/2.3a54f23b.chunk.js": "/resume/static/js/2.3a54f23b.chunk.js",
+    "static/js/2.3a54f23b.chunk.js.map": "/resume/static/js/2.3a54f23b.chunk.js.map",
     "index.html": "/resume/index.html",
-    "precache-manifest.cf381e6b1ca013ab2382abe4e78d2022.js": "/resume/precache-manifest.cf381e6b1ca013ab2382abe4e78d2022.js",
+    "precache-manifest.4db26a69c6d3675d2165bd9cea08773e.js": "/resume/precache-manifest.4db26a69c6d3675d2165bd9cea08773e.js",
     "service-worker.js": "/resume/service-worker.js",
-    "static/css/main.4dde8fcc.chunk.css.map": "/resume/static/css/main.4dde8fcc.chunk.css.map",
-    "static/js/2.0bf35bcb.chunk.js.LICENSE.txt": "/resume/static/js/2.0bf35bcb.chunk.js.LICENSE.txt",
+    "static/css/main.b3489aea.chunk.css.map": "/resume/static/css/main.b3489aea.chunk.css.map",
+    "static/js/2.3a54f23b.chunk.js.LICENSE.txt": "/resume/static/js/2.3a54f23b.chunk.js.LICENSE.txt",
     "static/media/aurora.png": "/resume/static/media/aurora.a5b9526b.png",
     "static/media/aws.png": "/resume/static/media/aws.e85a8815.png",
     "static/media/docker.png": "/resume/static/media/docker.53a3f17e.png",
-    "static/media/domopi.png": "/resume/static/media/domopi.8e517aff.png",
     "static/media/dsc.png": "/resume/static/media/dsc.bb330164.png",
     "static/media/findOrDraw.png": "/resume/static/media/findOrDraw.8ef9bcb0.png",
     "static/media/imag.png": "/resume/static/media/imag.6b0b0377.png",
     "static/media/kyc.png": "/resume/static/media/kyc.68750d01.png",
     "static/media/lego.png": "/resume/static/media/lego.cc98d74d.png",
-    "static/media/logo.svg": "/resume/static/media/logo.5d5d9eef.svg",
     "static/media/node.png": "/resume/static/media/node.2f2082bb.png",
     "static/media/react.png": "/resume/static/media/react.a89cbc19.png",
     "static/media/tpth.png": "/resume/static/media/tpth.70af5ca0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6c7e8381.js",
-    "static/js/2.0bf35bcb.chunk.js",
-    "static/css/main.4dde8fcc.chunk.css",
-    "static/js/main.6904b6f9.chunk.js"
+    "static/js/2.3a54f23b.chunk.js",
+    "static/css/main.b3489aea.chunk.css",
+    "static/js/main.53254fbe.chunk.js"
   ]
 }
