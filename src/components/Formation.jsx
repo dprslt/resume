@@ -3,8 +3,11 @@ import React from "react";
 const Formation = ({data}) => {
     return <div className={'formation'}>
         <div className={'date'}>
-            <span className={'to'}>{data.date.to}</span>
-            <span className={'from'}>{data.date.from}</span>
+            {
+                data.date.from
+                    ? <>De <span className={'from'}>{data.date.from}</span> à <span className={'to'}>{data.date.to}</span></>
+                    : <><span className={'from'}>{data.date.to}</span></>
+            }
         </div>
         <div className={'form-content'}>
             <h3 className={'title'}>{data.title}</h3>

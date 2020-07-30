@@ -18,13 +18,20 @@ const Experience = ({data}) => {
         </div>
 
         <div className={'exp-content'}>
+
+            {
+                data.description &&
+                <div className={'description'}>
+                    {data.description}
+                </div>
+            }
             {
                 data.activities &&
                 <div className={'activities'}>
                     {
                         data.activities.map(act => <div className={'activity'} key={act.title}>
                             <h4 className={'act-title'}>{act.title}</h4>
-                            <p className={'act-description'}>{act.description}</p>
+                            <p className={'description'}>{act.description}</p>
                         </div>)
                     }
                 </div>

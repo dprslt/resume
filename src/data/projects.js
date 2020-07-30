@@ -16,7 +16,7 @@ export const projets = [
     {
         title: "EcoTravelers",
         link: "https://play.google.com/store/apps/details?id=com.cognitivecompany.findordraw",
-        shortDescription: "Gagnant du Challenge Environement",
+        shortDescription: "Gagnant du Challenge Environnement",
         images: [dsc]
     },
     {

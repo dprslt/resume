@@ -5,8 +5,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faBirthdayCake,
     faCar,
-    faEnvelope,
-    faGlobeEurope,
+    faEnvelope, faGlobe,
+    faGlobeEurope, faHeart,
     faPhone,
     faUniversity
 } from '@fortawesome/free-solid-svg-icons'
@@ -20,10 +20,11 @@ import react from '../static/react.png'
 
 import Experience from "./Experience";
 import Formation from "./Formation";
-import {experiences, formations} from "../data/life";
+import {experiences, formations, skills} from "../data/life";
 import Biseau from "./Biseau";
 import {projets} from "../data/projects";
 import Projet from "./Projet";
+import Skill from "./Skill";
 
 
 const Info = ({children, icon}) => {
@@ -52,78 +53,131 @@ export default (props) => {
 
     return <div className={'page'}>
         <header>
-            <div className={'header-content'}>
-                <div className={'name'}>
-                    <h1>Théo DEPRESLE</h1>
-                    <h2>React Techlead</h2>
-                </div>
-                <div className={'infos'}>
-                    <Info icon={faEnvelope}><a
-                        href={'mailto://theo.depresle@gmail.com'}>theo.depresle@gmail.com</a></Info>
-                    <Info icon={faBirthdayCake}>23 ans</Info>
-                    <Info icon={faPhone}><a href={'phone://+33629325778'}>+33 6 29 32 57 78</a></Info>
-                    <Info icon={faCar}>Permis de conduire, véhicule personnel</Info>
+            <div className={"header-bg"}>
+                <div className={'header-content'}>
+                    <div className={'name'}>
+                        <h1>Théo DEPRESLE</h1>
+                        <h2>Ingénieur Fullstack</h2>
+                    </div>
+                    <div className={'infos'}>
+                        <Info icon={faEnvelope}><a
+                            href={'mailto://theo.depresle@gmail.com'}>theo.depresle@gmail.com</a></Info>
+                        <Info icon={faBirthdayCake}>23 ans</Info>
+                        <Info icon={faPhone}><a href={'phone://+33629325778'}>+33 6 29 32 57 78</a></Info>
+                        <Info icon={faCar}>Permis de conduire, véhicule personnel</Info>
+                    </div>
                 </div>
             </div>
+            <Biseau height={3} color={'#2b333c'} right={true} base={1}/>
         </header>
-        <Biseau height={5} color={'#2b333c'} right={true} base={2}/>
 
 
         <div className={'content'}>
 
-            <div className={'main'}>
-                <Section className={"experiences"} title={"Expériences"} icon={faGlobeEurope}>
-                    {experiences.map(e => <Experience data={e} key={e.title}/>)}
-                </Section>
-            </div>
+            <div className={'row row-exp'} style={{flex: 1}}>
+                <div className={'main'}>
+                    <Section className={"experiences"} title={"Expériences"} icon={faGlobeEurope}>
+                        {experiences.map(e => <Experience data={e} key={e.title}/>)}
+                    </Section>
+                    <Section className={"formations"} title={"Formations et certifications"} icon={faUniversity}>
+                        {formations.map(e => <Formation data={e} key={e.title}/>)}
 
-
-
-            <div className={'row'} style={{justifyItems: "flex-end"}}>
-
+                    </Section>
+                    <div className={'logos'}>
+                        <img src={imag} alt={"Logo Grenoble INP - ENSIMAG"} height={70}/>
+                        <img src={aws} alt={"AWS - Solution Architect - Associate"} height={40}/>
+                    </div>
+                </div>
 
                 <div className={'col'}>
 
-                    {/*<Biseau height={7} color={'#bfdaf0'} top={true}/>*/}
-                    {/*<div className={'col-section col-section-color'} >*/}
-                    {/*    <h2>Mes technos</h2>*/}
-                    {/*    <div className={'logo-line'}>*/}
-                    {/*        <img src={react} className={'logo-bubble'} height={50}/>*/}
-                    {/*        <img src={node} className={'logo-bubble'} height={50}/>*/}
-                    {/*        <img src={docker} className={'logo-bubble'} height={50}/>*/}
-                    {/*    </div>*/}
-                    {/*    <div className={'logo-line'}>*/}
-                    {/*      d  <img src={mongo} className={''} height={50}/>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
-                    {/*<Biseau height={7} color={'#bfdaf0'} right={true}/>*/}
+                    <div className={'skills col-section'}>
+                        <h2 className={'col-title'}>Mes Compétences</h2>
+                        {skills.map(s => <Skill skill={s}/>)}
+                    </div>
 
-                    {/*<div className={'col-section'} style={{height: "3cm"}}>*/}
 
-                    {/*</div>*/}
-
-                    <Biseau height={7} color={'#bfdaf0'} top={true}/>
-                    <div className={'projects col-section col-section-color'} >
-                        <h2>Mes projets</h2>
-
+                    <div className={'projets col-section'}>
+                        <h2 className={'col-title'}>Mes projets</h2>
                         {projets.map(p => <Projet projet={p}/>)}
                     </div>
-                    <Biseau height={7} color={'#bfdaf0'} right={true}/>
 
-                </div>
-
-                <div className={'main'}>
-
-                    <Section className={"formations"} title={"Formations et certifications"} icon={faUniversity}>
-                        {formations.map(e => <Formation data={e} key={e.title}/>)}
-                        <div className={'logos'}>
-                            <img src={imag} alt={"Logo Grenoble INP - ENSIMAG"} height={70}/>
-                            <img src={aws} alt={"AWS - Solution Architect - Associate"} height={40}/>
+                    <div className={'col-section'}>
+                        <h2 className={'col-title'}>Ma <FontAwesomeIcon icon={faHeart} className={'red'}/> stack</h2>
+                        <div className={'logo-line'}>
+                            <img src={react} className={'logo-bubble'} height={50}/>
+                            <img src={node} className={'logo-bubble'} height={50}/>
+                            <img src={docker} className={'logo-bubble'} height={50}/>
                         </div>
-                    </Section>
+                        <div className={'logo-line'}>
+                            <img src={mongo} className={''} height={40}/>
+                        </div>
+                    </div>
+
+                    <div className={'langs col-section'}>
+                        <div className={'lang'}>
+                            <h3>
+                                <FontAwesomeIcon fixedWidth={true} className={"icon"} icon={faGlobeEurope}/>
+                                <span>Anglais niveau B2</span>
+                            </h3>
+                            <p className={'secondary'}>TOEIC (2017) : 935</p>
+                        </div>
+                        <div className={'lang'}>
+                            <h3>
+                                <FontAwesomeIcon fixedWidth={true} className={"icon"} icon={faGlobeEurope}/>
+                                <span>Espagnol niveau A2</span>
+                            </h3>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
+
+            {/*<div className={'row row-form'} style={{justifyItems: "flex-end"}}>*/}
+
+
+            {/*    <div className={'main'}>*/}
+
+            {/*        <Section className={"formations"} title={"Formations et certifications"} icon={faUniversity}>*/}
+            {/*            {formations.map(e => <Formation data={e} key={e.title}/>)}*/}
+
+            {/*        </Section>*/}
+            {/*        <div className={'logos'}>*/}
+            {/*            <img src={imag} alt={"Logo Grenoble INP - ENSIMAG"} height={70}/>*/}
+            {/*            <img src={aws} alt={"AWS - Solution Architect - Associate"} height={40}/>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    <div className={'col'}>*/}
+            {/*        /!*<Biseau height={7} color={'#bfdaf0'} top={true}/>*!/*/}
+
+            {/*        /!*<div className={'col-section col-section-color'} >*!/*/}
+            {/*        /!*    <h2>Mes technos</h2>*!/*/}
+            {/*        /!*    <div className={'logo-line'}>*!/*/}
+            {/*        /!*        <img src={react} className={'logo-bubble'} height={50}/>*!/*/}
+            {/*        /!*        <img src={node} className={'logo-bubble'} height={50}/>*!/*/}
+            {/*        /!*        <img src={docker} className={'logo-bubble'} height={50}/>*!/*/}
+            {/*        /!*    </div>*!/*/}
+            {/*        /!*    <div className={'logo-line'}>*!/*/}
+            {/*        /!*      d  <img src={mongo} className={''} height={50}/>*!/*/}
+            {/*        /!*    </div>*!/*/}
+            {/*        /!*</div>*!/*/}
+            {/*        /!*<Biseau height={7} color={'#bfdaf0'} right={true}/>*!/*/}
+
+            {/*        /!*<div className={'col-section'} style={{height: "3cm"}}>*!/*/}
+
+            {/*        /!*</div>*!/*/}
+
+            {/*        <Biseau height={7} color={'#bfdaf0'} top={true} right={true}/>*/}
+            {/*        <div className={'projects col-section col-section-color'}>*/}
+            {/*            <h2>Mes projets</h2>*/}
+
+            {/*            {projets.map(p => <Projet projet={p}/>)}*/}
+            {/*        </div>*/}
+            {/*        <Biseau height={7} color={'#bfdaf0'} right={false}/>*/}
+
+            {/*    </div>*/}
+            {/*</div>*/}
 
 
         </div>
