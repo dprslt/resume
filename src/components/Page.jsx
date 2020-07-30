@@ -68,51 +68,63 @@ export default (props) => {
         </header>
         <Biseau height={5} color={'#2b333c'} right={true} base={2}/>
 
+
         <div className={'content'}>
 
             <div className={'main'}>
-
                 <Section className={"experiences"} title={"Expériences"} icon={faGlobeEurope}>
                     {experiences.map(e => <Experience data={e} key={e.title}/>)}
                 </Section>
-                <Section className={"formations"} title={"Formations et certifications"} icon={faUniversity}>
-                    {formations.map(e => <Formation data={e} key={e.title}/>)}
-                    <div className={'logos'}>
-                        <img src={imag} alt={"Logo Grenoble INP - ENSIMAG"} height={70}/>
-                        <img src={aws} alt={"AWS - Solution Architect - Associate"} height={40}/>
-                    </div>
-                </Section>
             </div>
 
-            <div className={'col'}>
 
-                <Biseau height={7} color={'#bfdaf0'} top={true}/>
-                <div className={'col-section col-section-color'} >
-                    <h2>Mes technos</h2>
-                    <div className={'logo-line'}>
-                        <img src={react} className={'logo-bubble'} height={50}/>
-                        <img src={node} className={'logo-bubble'} height={50}/>
-                        <img src={docker} className={'logo-bubble'} height={50}/>
+
+            <div className={'row'} style={{justifyItems: "flex-end"}}>
+
+
+                <div className={'col'}>
+
+                    {/*<Biseau height={7} color={'#bfdaf0'} top={true}/>*/}
+                    {/*<div className={'col-section col-section-color'} >*/}
+                    {/*    <h2>Mes technos</h2>*/}
+                    {/*    <div className={'logo-line'}>*/}
+                    {/*        <img src={react} className={'logo-bubble'} height={50}/>*/}
+                    {/*        <img src={node} className={'logo-bubble'} height={50}/>*/}
+                    {/*        <img src={docker} className={'logo-bubble'} height={50}/>*/}
+                    {/*    </div>*/}
+                    {/*    <div className={'logo-line'}>*/}
+                    {/*      d  <img src={mongo} className={''} height={50}/>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+                    {/*<Biseau height={7} color={'#bfdaf0'} right={true}/>*/}
+
+                    {/*<div className={'col-section'} style={{height: "3cm"}}>*/}
+
+                    {/*</div>*/}
+
+                    <Biseau height={7} color={'#bfdaf0'} top={true}/>
+                    <div className={'projects col-section col-section-color'} >
+                        <h2>Mes projets</h2>
+
+                        {projets.map(p => <Projet projet={p}/>)}
                     </div>
-                    <div className={'logo-line'}>
-                        <img src={mongo} className={''} height={50}/>
-                    </div>
-                </div>
-                <Biseau height={7} color={'#bfdaf0'} right={true}/>
-
-                <div className={'col-section'} style={{height: "3cm"}}>
+                    <Biseau height={7} color={'#bfdaf0'} right={true}/>
 
                 </div>
 
-                <Biseau height={7} color={'#bfdaf0'} top={true}/>
-                <div className={'col-section col-section-color'} >
-                    <h2>Mes projets</h2>
+                <div className={'main'}>
 
-                    {projets.map(p => <Projet projet={p}/>)}
+                    <Section className={"formations"} title={"Formations et certifications"} icon={faUniversity}>
+                        {formations.map(e => <Formation data={e} key={e.title}/>)}
+                        <div className={'logos'}>
+                            <img src={imag} alt={"Logo Grenoble INP - ENSIMAG"} height={70}/>
+                            <img src={aws} alt={"AWS - Solution Architect - Associate"} height={40}/>
+                        </div>
+                    </Section>
                 </div>
-                <Biseau height={7} color={'#bfdaf0'} right={true}/>
-
             </div>
+
+
 
         </div>
 

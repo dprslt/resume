@@ -19,6 +19,17 @@ $light-color: #bfdaf0;
   flex-direction: column;
   position: relative;
 
+
+  .df-col{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .df-row {
+    display: flex;
+    flex-direction: row;
+  }
+
   header {
 
     @media print {
@@ -78,21 +89,26 @@ $light-color: #bfdaf0;
 
   }
 
-  .content {
-    flex: 1;
+
+  .row {
     display: flex;
     flex-direction: row;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 
     .main {
       flex: 17;
-      margin-left: 0.5em;
+      margin: 0 0.5em;
     }
 
     .col {
-      flex: 9;
+      flex: 10;
       display: flex;
       flex-direction: column;
-      margin-left: 0.5em;
 
       .col-section {
         padding: 0.1em 1em;
@@ -111,11 +127,56 @@ $light-color: #bfdaf0;
       .col-section-color {
         background-color: $light-color;
       }
+
+      .projects{
+        padding-bottom: 1.5em ;
+      }
+
+      .projet{
+        display: flex;
+        flex-direction: row;
+        margin: 0.75em 0;
+
+        .images {
+          display: flex;
+          flex-direction: column;
+          img{
+            border-radius: 50% ;
+            border: solid 1px $main-color;
+            height: 40px;
+          }
+
+          img:not(:first-child){
+            margin-top: -25%;
+          }
+        }
+
+        .proj-desc{
+          margin-left: 0.75em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h3 {
+            margin: 0;
+            font-weight: 600;
+            color: $main-color;
+            font-size: 1.1em;
+            line-height: 1em;
+          }
+          .secondary{
+            margin: 0;
+            font-size: 0.7em;
+            line-height: 1em;
+            font-weight: 400;
+            opacity: 0.6;
+          }
+        }
+      }
     }
 
     .section {
 
-      margin: 1em 0.5em 0.5em;
+      margin: 0.5em;
 
       .sec-header {
         display: flex;
@@ -140,14 +201,14 @@ $light-color: #bfdaf0;
       .sec-content {
         position: relative;
         margin-left: 1rem;
+        margin-top: 0.5em;
         padding-left: 1rem;
 
         &::before {
           content: '';
-          margin: 0.5rem 0;
           position: absolute;
-          border-left: solid 1px $main-color;
-          opacity: 0.5;
+          border-left: solid 2px $accent-color;
+          opacity: 1;
           left: 0;
           top: 0;
           bottom: 0;
@@ -157,30 +218,66 @@ $light-color: #bfdaf0;
 
 
     .experiences {
+      margin-top: 1em;
+      margin-right: 1em;
+
 
       .experience {
 
-        margin-bottom: 0.5em;
+        &::before{
+          content: ' ';
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $main-color;
+          position: absolute;
+          left: calc(-1em - 2px);
+          top: 1.3em;
+        }
+
+        margin-bottom: 1em;
+        position: relative;
+
+
+        .date {
+          flex-basis: 100%;
+          font-weight: 500;
+          font-size: 0.85em;
+          line-height: 0.8em;
+
+          color: $accent-color;
+
+          font-variant: all-small-caps;
+          text-transform: uppercase;
+
+          .from, .to {
+            font-variant: normal;
+            font-weight: 600;
+          }
+
+        }
 
         .header {
           display: flex;
           flex-direction: row;
           align-items: center;
-          line-height: 1em;
-
-          .date {
-            color: $accent-color;
-            font-weight: 600;
-            font-size: 0.85em;
-            line-height: 0.8em;
-          }
 
           .title {
             color: $main-color;
             margin: 0;
-            padding-left: 0.3em;
+            //padding-left: 0.3em;
           }
 
+          p{
+            margin-bottom: 0;
+            margin-top: 0.25em;
+            padding-left: 0.5em;
+          }
+
+        }
+
+        .exp-content{
+          padding-left: 1em;
         }
 
         .secondary {
@@ -195,17 +292,23 @@ $light-color: #bfdaf0;
         .activities {
 
           .activity {
-            margin-bottom: 0.75em;
+            margin-bottom: 0.5em;
 
             .act-title {
               margin: 0;
               font-size: 0.9em;
+
+              &::before {
+                content: "-";
+                margin-right: 0.5em;
+              }
             }
 
             .act-description {
               padding-left: 1em;
               margin: 0;
-              font-size: 0.95rem;
+              //font-size: 0.95rem;
+              font-size: 10pt;
               opacity: 0.8;
               white-space: pre-wrap;
               line-height: 1.1em;
@@ -219,6 +322,8 @@ $light-color: #bfdaf0;
       display: flex;
       flex-direction: row;
       font-size: 0.9em;
+
+      max-width: 80%;
 
       p {
         margin: 0;
@@ -284,45 +389,6 @@ $light-color: #bfdaf0;
 
       .secondary {
         margin: 0;
-      }
-    }
-  }
-
-  .projet{
-    display: flex;
-    flex-direction: row;
-    margin: 1em 0;
-
-    .images {
-      display: flex;
-      flex-direction: column;
-      img{
-        border-radius: 50% ;
-        border: solid 1px $main-color;
-        height: 45px;
-      }
-
-      img:not(:first-child){
-        margin-top: -25%;
-      }
-    }
-
-    .proj-desc{
-      margin-left: 0.75em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      h3 {
-        margin: 0;
-        font-weight: 600;
-        color: $main-color;
-        font-size: 1em;
-      }
-      .secondary{
-        margin: 0;
-        font-size: 0.8em;
-        font-weight: 400;
-        opacity: 0.8;
       }
     }
   }

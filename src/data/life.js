@@ -37,7 +37,7 @@ export const experiences = [
         company: "Sopra Steria Group",
         place: "Toulouse, France",
         date: {
-            from: "2018-09-10",
+            from: "Sept. 2018",
         },
         activities: [
             {
@@ -63,8 +63,8 @@ export const experiences = [
         company: "EDF R&D",
         place: "Paris Saclay / Palo Alto, USA",
         date: {
-            from: "2015-09-17",
-            to: "2018-08-31"
+            from: "Sept. 2015",
+            to: "Août 2018"
         },
         tech: ["Java", "Neo4j", "Kafka", "NodeJS", "AngularJS", "Python", "Tensorflow", "Keras", "CNN",
             "Gitlab", "Docker", "Nexus"]
@@ -73,8 +73,8 @@ export const experiences = [
     {
         title: "Stagiaire puis intérimaire ENEDIS",
         date: {
-            from: "2015-09-17",
-            to: "2018-08-31"
+            from: "Avril 2015",
+            to: "Août 2015"
         },
         tech: ["PHP", "CSS", "Javascript", "Postgresql", "SIG", "git"]
 

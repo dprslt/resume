@@ -29,7 +29,7 @@ export const projets = [
         title: "Domo Pi et Aurora",
         link: "https://github.com/dprslt/aurora",
         shortDescription: "Solutions domotiques DIY !",
-        images: [domopi, aurora]
+        images: [aurora]
     },
     {
         title: "TPTH",
