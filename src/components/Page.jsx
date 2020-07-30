@@ -6,7 +6,7 @@ import {
     faBirthdayCake,
     faCar,
     faEnvelope,
-    faGlobeEurope, faHeart,
+    faGlobeEurope, faHeart, faMotorcycle,
     faPhone,
     faUniversity
 } from '@fortawesome/free-solid-svg-icons'
@@ -25,6 +25,7 @@ import Biseau from "./Biseau";
 import {projets} from "../data/projects";
 import Projet from "./Projet";
 import Skill from "./Skill";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 
 const Info = ({children, icon}) => {
@@ -184,7 +185,17 @@ export default (props) => {
 
 
         <footer>
-            <Biseau height={7} color={'#2b333c'} top={true} base={5}/>
+            <Biseau height={3} color={'#2b333c'} top={true} base={1}/>
+            <div className={'footer-container'}>
+                <div className={'hobbies'}>
+                    <FontAwesomeIcon className={'icon'} icon={faMotorcycle}/>
+                    <p>Tech enthusiast, motard, photographe amateur et DIY</p>
+                </div>
+                <div className={'links'}>
+                    <a className={'link'} href={'https://github.com/dprslt'} title={"GitHub dprslt"}><FontAwesomeIcon icon={faGithub}/></a>
+                    <a className={'link'} href={'https://www.linkedin.com/in/dprslt/'} title={'Linkedin'}><FontAwesomeIcon icon={faLinkedin}/></a>
+                </div>
+            </div>
         </footer>
 
 

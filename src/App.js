@@ -12,7 +12,7 @@ function App() {
             <div className={'notes'}>
                 <p><a href={"#"} onClick={window.print}>Imprimer</a> cette page pour avoir un obtenir mon CV au format PDF.</p>
 
-                <p>Build with React and <FontAwesomeIcon icon={faHeart} className={'red'}/></p>
+                <p>Build with React, Sass and <FontAwesomeIcon icon={faHeart} className={'red'}/></p>
 
                 <p>&copy; 2020 Theo Depresle</p>
             </div>
