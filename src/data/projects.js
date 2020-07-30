@@ -15,13 +15,13 @@ export const projets = [
     },
     {
         title: "EcoTravelers",
-        link: "https://play.google.com/store/apps/details?id=com.cognitivecompany.findordraw",
+        link: undefined,
         shortDescription: "Gagnant du Challenge Environnement",
         images: [dsc]
     },
     {
         title: "KYChain",
-        link: "https://play.google.com/store/apps/details?id=com.cognitivecompany.findordraw",
+        link: undefined,
         shortDescription: "Concours Génération Blockchain",
         images: [kyc]
     },

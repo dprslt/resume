@@ -241,6 +241,8 @@ $light-color: #bfdaf0;
       }
 
       .projet {
+        text-decoration: none;
+        color: inherit;
         display: flex;
         flex-direction: row;
         margin-bottom: 0.75em;
