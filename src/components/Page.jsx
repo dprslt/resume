@@ -3,11 +3,7 @@ import React from "react"
 import './Page.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
-    faBirthdayCake,
-    faCar,
-    faEnvelope,
     faGlobeEurope, faHeart, faMotorcycle,
-    faPhone,
     faUniversity
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -26,14 +22,7 @@ import {projets} from "../data/projects";
 import Projet from "./Projet";
 import Skill from "./Skill";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-
-
-const Info = ({children, icon}) => {
-    return <div className={'info'}>
-        <span className={'info-value'}>{children}</span>
-        <FontAwesomeIcon className={'info-icon'} icon={icon}/>
-    </div>
-}
+import PersonnalData from "./PersonnalData";
 
 const SectionTitle = ({title, icon}) => {
     return <div className={'sec-header'}>
@@ -60,13 +49,7 @@ export default (props) => {
                         <h1>Théo DEPRESLE</h1>
                         <h2>Ingénieur Fullstack</h2>
                     </div>
-                    <div className={'infos'}>
-                        <Info icon={faEnvelope}><a
-                            href={'mailto://theo.depresle@gmail.com'}>theo.depresle@gmail.com</a></Info>
-                        <Info icon={faBirthdayCake}>23 ans</Info>
-                        <Info icon={faPhone}><a href={'phone://+33629325778'}>+33 6 29 32 57 78</a></Info>
-                        <Info icon={faCar}>Permis de conduire, véhicule personnel</Info>
-                    </div>
+                    <PersonnalData/>
                 </div>
             </div>
             <Biseau height={3} color={'#2b333c'} right={true} base={1}/>
@@ -94,13 +77,13 @@ export default (props) => {
 
                     <div className={'skills col-section'}>
                         <h2 className={'col-title'}>Mes Compétences</h2>
-                        {skills.map(s => <Skill skill={s}/>)}
+                        {skills.map(s => <Skill skill={s} key={s.name}/>)}
                     </div>
 
 
                     <div className={'projets col-section'}>
                         <h2 className={'col-title'}>Mes projets</h2>
-                        {projets.map(p => <Projet projet={p}/>)}
+                        {projets.map(p => <Projet projet={p} key={p.title}/>)}
                     </div>
 
                     <div className={'col-section'}>
@@ -133,56 +116,7 @@ export default (props) => {
 
                 </div>
             </div>
-
-
-            {/*<div className={'row row-form'} style={{justifyItems: "flex-end"}}>*/}
-
-
-            {/*    <div className={'main'}>*/}
-
-            {/*        <Section className={"formations"} title={"Formations et certifications"} icon={faUniversity}>*/}
-            {/*            {formations.map(e => <Formation data={e} key={e.title}/>)}*/}
-
-            {/*        </Section>*/}
-            {/*        <div className={'logos'}>*/}
-            {/*            <img src={imag} alt={"Logo Grenoble INP - ENSIMAG"} height={70}/>*/}
-            {/*            <img src={aws} alt={"AWS - Solution Architect - Associate"} height={40}/>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <div className={'col'}>*/}
-            {/*        /!*<Biseau height={7} color={'#bfdaf0'} top={true}/>*!/*/}
-
-            {/*        /!*<div className={'col-section col-section-color'} >*!/*/}
-            {/*        /!*    <h2>Mes technos</h2>*!/*/}
-            {/*        /!*    <div className={'logo-line'}>*!/*/}
-            {/*        /!*        <img src={react} className={'logo-bubble'} height={50}/>*!/*/}
-            {/*        /!*        <img src={node} className={'logo-bubble'} height={50}/>*!/*/}
-            {/*        /!*        <img src={docker} className={'logo-bubble'} height={50}/>*!/*/}
-            {/*        /!*    </div>*!/*/}
-            {/*        /!*    <div className={'logo-line'}>*!/*/}
-            {/*        /!*      d  <img src={mongo} className={''} height={50}/>*!/*/}
-            {/*        /!*    </div>*!/*/}
-            {/*        /!*</div>*!/*/}
-            {/*        /!*<Biseau height={7} color={'#bfdaf0'} right={true}/>*!/*/}
-
-            {/*        /!*<div className={'col-section'} style={{height: "3cm"}}>*!/*/}
-
-            {/*        /!*</div>*!/*/}
-
-            {/*        <Biseau height={7} color={'#bfdaf0'} top={true} right={true}/>*/}
-            {/*        <div className={'projects col-section col-section-color'}>*/}
-            {/*            <h2>Mes projets</h2>*/}
-
-            {/*            {projets.map(p => <Projet projet={p}/>)}*/}
-            {/*        </div>*/}
-            {/*        <Biseau height={7} color={'#bfdaf0'} right={false}/>*/}
-
-            {/*    </div>*/}
-            {/*</div>*/}
-
-
         </div>
-
 
         <footer>
             <Biseau height={3} color={'#2b333c'} top={true} base={1}/>
@@ -193,7 +127,7 @@ export default (props) => {
                 </div>
                 <div className={'links'}>
                     <a className={'link'} href={'https://github.com/dprslt'} title={"GitHub dprslt"}><FontAwesomeIcon icon={faGithub}/></a>
-                    <a className={'link'} href={'https://www.linkedin.com/in/dprslt/'} title={'Linkedin'}><FontAwesomeIcon icon={faLinkedin}/></a>
+                    <a className={'link'} href={'https://www.linkedin.com/in/dprslt/'} title={'My profile'}><FontAwesomeIcon icon={faLinkedin}/></a>
                 </div>
             </div>
         </footer>

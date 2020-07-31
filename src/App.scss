@@ -1,5 +1,6 @@
 @media screen {
 
+
   html {
     position: absolute;
     top: 0;
@@ -8,6 +9,12 @@
     right: 0;
     background-color: #237760;
     min-width: 23cm;
+
+    @-moz-document url-prefix() {
+    & {
+      font-size: 15px;
+    }
+  }
   }
 
   html, body, #root {
@@ -31,7 +38,6 @@
   }
 
 
-
   .notes {
     margin-top: 2em;
     text-align: center;
@@ -41,6 +47,7 @@
     font-weight: 600;
     opacity: 0.5;
     font-family: 'Open Sans', sans-serif;
+
     p {
       margin: 2em 0;
     }
@@ -48,9 +55,14 @@
     a {
       color: inherit;
     }
+
     .red {
       color: #e30e0e;
     }
+  }
+  * {
+    box-sizing: border-box;
+    //line-height: 1.2em;
   }
 }
 
