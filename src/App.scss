@@ -34,7 +34,44 @@
   }
   .page {
     box-shadow: rgba(50, 50, 50, 0.3) 0 3px 5px;
-    margin: 2em;
+    margin: 0 2em;
+  }
+
+  .int{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 1.25em;
+    width: 21cm;
+    padding: 0.5em 1em;
+
+    .lang-btn{
+      .flag-icon{
+        box-shadow: rgba(50,50,50,0.6) 0px 0px 5px;
+      }
+      &:not(:last-child){
+        margin-right: 0.5em;
+      }
+
+      opacity: 0.6;
+      cursor: pointer;
+      &.selected, &:hover{
+        opacity: 1;
+      }
+      position: relative;
+      margin-bottom: 0.60em;
+      &.selected::after {
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        border-radius: 50%;
+        content: '';
+        position: absolute;
+        bottom: -0.6em;
+        left: calc(50% - 3px);
+        display: block;
+      }
+    }
   }
 
 
@@ -69,6 +106,8 @@
 @media print {
   .notes {
     display: none;
-
+  }
+  .int {
+    display: none;
   }
 }

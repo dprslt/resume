@@ -23,11 +23,12 @@ import Projet from "./Projet";
 import Skill from "./Skill";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import PersonnalData from "./PersonnalData";
+import IntTextNode from "./InternationalTextNode";
 
 const SectionTitle = ({title, icon}) => {
     return <div className={'sec-header'}>
         <FontAwesomeIcon className={'sec-icon'} icon={icon}/>
-        <h2>{title}</h2>
+        <h2><IntTextNode text={title}/></h2>
     </div>
 }
 
@@ -39,6 +40,33 @@ const Section = ({title, icon, children, className}) => {
 }
 
 
+const contentHeader = {
+    title: {
+        fr: "Ingénieur FullStack",
+        en: "FullStack Engineer"
+    }
+}
+
+const headersTransl = {
+    exp: {
+        fr: "Expériences",
+        en: "Experiences"
+    },
+    form: {
+        fr: "Formations et certifications",
+        en: "Education & certificates"
+    },
+    skills: {
+        fr: "Mes compétences",
+        en: "My skills"
+    },
+    projects: {
+        fr: "Mes projets",
+        en: "My projects"
+    }
+}
+
+
 export default (props) => {
 
     return <div className={'page'}>
@@ -47,7 +75,7 @@ export default (props) => {
                 <div className={'header-content'}>
                     <div className={'name'}>
                         <h1>Théo DEPRESLE</h1>
-                        <h2>Ingénieur Fullstack</h2>
+                        <h2><IntTextNode text={contentHeader.title}/></h2>
                     </div>
                     <PersonnalData/>
                 </div>
@@ -60,11 +88,11 @@ export default (props) => {
 
             <div className={'row row-exp'} style={{flex: 1}}>
                 <div className={'main'}>
-                    <Section className={"experiences"} title={"Expériences"} icon={faGlobeEurope}>
-                        {experiences.map(e => <Experience data={e} key={e.title}/>)}
+                    <Section className={"experiences"} title={headersTransl.exp} icon={faGlobeEurope}>
+                        {experiences.map(e => <Experience data={e} key={e.title.fr || e.title}/>)}
                     </Section>
-                    <Section className={"formations"} title={"Formations et certifications"} icon={faUniversity}>
-                        {formations.map(e => <Formation data={e} key={e.title}/>)}
+                    <Section className={"formations"} title={headersTransl.form} icon={faUniversity}>
+                        {formations.map(e => <Formation data={e} key={e.title.fr || e.title}/>)}
 
                     </Section>
                     <div className={'logos'}>
@@ -76,18 +104,18 @@ export default (props) => {
                 <div className={'col'}>
 
                     <div className={'skills col-section'}>
-                        <h2 className={'col-title'}>Mes Compétences</h2>
+                        <h2 className={'col-title'}><IntTextNode text={headersTransl.skills}/></h2>
                         {skills.map(s => <Skill skill={s} key={s.name}/>)}
                     </div>
 
 
                     <div className={'projets col-section'}>
-                        <h2 className={'col-title'}>Mes projets</h2>
-                        {projets.map(p => <Projet projet={p} key={p.title}/>)}
+                        <h2 className={'col-title'}><IntTextNode text={headersTransl.projects}/></h2>
+                        {projets.map(p => <Projet projet={p} key={p.title.fr || p.title}/>)}
                     </div>
 
                     <div className={'col-section'}>
-                        <h2 className={'col-title'}>Ma <FontAwesomeIcon icon={faHeart} className={'red'}/> stack</h2>
+                        <h2 className={'col-title'}><IntTextNode text={{fr: "Ma", en: "My"}}/> <FontAwesomeIcon icon={faHeart} className={'red'}/> stack</h2>
                         <div className={'logo-line'}>
                             <img src={react} className={'logo-bubble'} alt={'React JS'} height={45}/>
                             <img src={node} className={'logo-bubble'} alt={'NodeJS'} height={45}/>
@@ -102,14 +130,20 @@ export default (props) => {
                         <div className={'lang'}>
                             <h3>
                                 <FontAwesomeIcon fixedWidth={true} className={"icon"} icon={faGlobeEurope}/>
-                                <span>Anglais niveau B2</span>
+                                <span><IntTextNode text={{
+                                    fr: "Anglais niveau B2",
+                                    en: "English : Fluent"
+                                }}/></span>
                             </h3>
                             <p className={'secondary'}>TOEIC (2017) : 935</p>
                         </div>
                         <div className={'lang'}>
                             <h3>
                                 <FontAwesomeIcon fixedWidth={true} className={"icon"} icon={faGlobeEurope}/>
-                                <span>Espagnol niveau A2</span>
+                                <span><IntTextNode text={{
+                                    fr: "Espagnol niveau A2",
+                                    en: "Spanish : Basics"
+                                }}/></span>
                             </h3>
                         </div>
                     </div>

@@ -10,42 +10,66 @@ export const projets = [
     {
         title: "FindOrDraw",
         link: "https://play.google.com/store/apps/details?id=com.cognitivecompany.findordraw",
-        shortDescription: "Jeu mobile - Play Store",
+        shortDescription: {
+            fr: "Jeu mobile - Play Store",
+            en: "Mobile game - Play Store"
+        },
         images: [findOrDraw]
     },
     {
         title: "EcoTravelers",
-        link: undefined,
-        shortDescription: "Gagnant du Challenge Environnement",
+        link: "https://www.sesarju.eu/node/3388",
+        shortDescription: {
+            fr: "Gagnant du Challenge Environnement",
+            en: "Winner of the Environment Challenge"
+        },
         images: [dsc]
     },
     {
         title: "Le Madras",
-        shortDescription: "Site vitrine pour une patisserie",
+        shortDescription: {
+            fr: "Site vitrine pour une patisserie",
+            en: "Showcase website for a French pastry shop"
+        },
         link: 'https://www.patisserie-lemadras.com/',
         images: [cake]
     },
     {
         title: "KYChain",
-        link: undefined,
-        shortDescription: "Concours Génération Blockchain",
+        link: "http://showroom-actuariat.sia-partners.com/blockchain/GBC_Website_0.2/indexEN.html",
+        shortDescription: {
+            fr: "Concours Génération Blockchain",
+            en: 'Constest "Génération Blockchain"'
+        },
         images: [kyc]
     },
     {
-        title: "Domo Pi et Aurora",
+        title: {
+            fr: "Domo Pi et Aurora",
+            en: "Domo Pi & Aurora"
+        },
         link: "https://github.com/dprslt/aurora",
-        shortDescription: "Solutions domotiques DIY !",
+        shortDescription: {
+            fr: "Solutions domotiques DIY !",
+            en: "DIY home automation solutions"
+        },
         images: [aurora]
     },
     {
         title: "TPTH",
-        shortDescription: "Infrastructure DevOps self hosted",
+        shortDescription: {
+            fr: "Infrastructure DevOps self hosted",
+            en: "Self hosted DevOps platform"
+        },
         images: [tpth]
     },
     {
         title: "LegoLOGO",
         link: "http://marc.chevaldonne.free.fr/ens_rech/Bienvenue/Entrees/2017/5/23_LegoLOGO_a_Exposciences_Montlucon.html",
-        shortDescription: "Apprendre l'algorithmie aux enfants !",
+        shortDescription: {
+            fr: "Apprendre l'algorithmie aux enfants !",
+            en: "Teach algorithm to childrens"
+        },
         images: [lego]
     },
 

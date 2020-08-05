@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {faBirthdayCake, faCar, faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import IntTextNode from "./InternationalTextNode";
 
 const Info = ({children, icon}) => {
     return <div className={'info'}>
@@ -28,6 +29,30 @@ const data = {
     }, mail : {
         target: 'mailto://theo.depresle@gmail.com',
         text: 'theo.depresle@gmail.com'
+    },
+    age: {
+        fr: "23 ans",
+        en: "23 years old"
+    },
+    car: {
+        fr: "Permis de conduire, véhicule personnel",
+        en: "Driver license, personnal car"
+    }
+
+}
+
+const contextText = {
+    title: {
+        fr: "Contactez moi !",
+        en: "Get in touch !"
+    },
+    p1: {
+        fr: "Ces informations sont masquées pour éviter d'être récupérées par des robots.",
+        en: "Theses data are hidden to avoid automatic scrapping"
+    },
+    p2: {
+        fr: "Cliquez ici pour les afficher.",
+        en: "Click here to display them."
     }
 }
 
@@ -44,15 +69,14 @@ const PersonnalData = () => {
     globalSetClear = setClear
     return <div className={'infos'}>
         <SensitiveInfo data={data.mail} icon={faEnvelope} clear={clear}/>
-        <Info icon={faBirthdayCake}>23 ans</Info>
+        <Info icon={faBirthdayCake}><IntTextNode text={data.age}/></Info>
         <SensitiveInfo data={data.phone} icon={faPhone} clear={clear}/>
-        <Info icon={faCar}>Permis de conduire, véhicule personnel</Info>
+        <Info icon={faCar}><IntTextNode text={data.car}/></Info>
         {!clear &&
         <div className={'placeholder'} onClick={() => setClear(true)}>
-
-            <h3>Contactez moi !</h3>
-            <p>Ces informations sont masquées pour éviter d'être récupérées par des robots.</p>
-            <p>Cliquez ici pour les afficher.</p>
+            <h3><IntTextNode text={contextText.title}/></h3>
+            <p><IntTextNode text={contextText.p1}/></p>
+            <p><IntTextNode text={contextText.p2}/></p>
         </div>
         }
     </div>

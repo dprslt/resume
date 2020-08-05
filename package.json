@@ -1,5 +1,5 @@
 {
-  "name": "untitled",
+  "name": "dprslt-resume",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://dprslt.github.io/resume",
@@ -14,6 +14,7 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-flag-icon-css": "^1.0.25",
     "react-scripts": "3.4.1"
   },
   "scripts": {

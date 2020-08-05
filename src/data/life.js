@@ -1,31 +1,58 @@
 export const formations = [
     {
-        title: "Coursera - Programming with Google Go",
+        title: {
+            fr: "Coursera - Programming with Google Go",
+            en: "Coursera - Programming with Google Go"
+        },
         secondary: "TDL2FSXEVUJV",
         date: {
-            to: "Avril 2020",
+            to: {
+                fr: "Avril 2020",
+                en: "Avril 2020"
+            },
         }
     },
     {
-        title: "AWS - Solution Architect Associate",
+        title: {
+            fr: "AWS - Solution Architect Associate",
+            en: "AWS - Solution Architect Associate"
+        },
         secondary: "KM1 X3VLKBNV1 QG56",
         date: {
-            to: "Juin 2019",
+            to: {
+                fr: "Juin 2019",
+                en: "June 2019"
+            },
         }
     },
     {
-        title: "ENSIMAG - Ingénierie des Systèmes d'information \nCursus en apprentissage",
+        title: {
+            fr: "ENSIMAG - Ingénierie des Systèmes d'information \nCursus en apprentissage",
+            en: "ENSIMAG - MD Computer Sciences Engineering \nApprenticeship training"
+        },
         secondary: "Grenoble INP, France",
         date: {
-            to: "Août 2018",
+            to: {
+                fr: "Août 2018",
+                en : "Aug 2018"
+            },
             from: "Sep. 2015",
         }
     },
     {
-        title: "DUT Informatique, Filière Poursuite d'Etudes",
-        secondary: "IUT de Clermont-Ferrand, France",
+        title: {
+            fr: "DUT Informatique, Filière Poursuite d'Etudes",
+            en: "Technical Degree - Computer Sciences"
+        },
+        secondary: {
+            fr: "IUT de Clermont-Ferrand, France",
+            en: "IUT of Clermont-Ferrand, France"
+        },
         date: {
-            to: "Juin 2015",
+            to: {
+                fr: "Juin 2015",
+                en: "June 2015"
+            },
             from: "Sep. 2013"
         }
     }
@@ -33,7 +60,10 @@ export const formations = [
 
 export const experiences = [
     {
-        title: "Ingénieur d'études",
+        title: {
+            fr: "Ingénieur d'études",
+            en: "Software Engineer"
+        },
         company: "Sopra Steria Group",
         place: "Toulouse",
         date: {
@@ -41,36 +71,64 @@ export const experiences = [
         },
         activities: [
             {
-                title: "Développeur FullStack : ReactJS / VueJS / Node / PHP",
-                description: "Participation à la conception de plusieurs projets de développement logiciel.\n" +
-                    "Co-responsable des développements Frontend pour le projet Européen COMMUTE et pour différents clients grand comptes.",
+                title: {
+                    fr: "Développeur FullStack : ReactJS / VueJS / Node / PHP",
+                    en: "Fullstack Developer : ReactJS / VueJS / Node / PHP"
+                },
+                description: {
+                    fr :"Participation à la conception de plusieurs projets de développement logiciel.\n" +
+                        "Co-responsable des développements Frontend pour le projet Européen COMMUTE et pour différents clients grand comptes.",
+                    en: "Design and implementation of various web solutions.\n" +
+                        "Lead frontend developer for the European project COMMUTE and for other large accounts customers such as EUROCONTROL"
+                },
             },
             {
-                title: "Formateur & Consultant Data Engineering",
-                description: "Conseil et animation de formations autour de la stack Elastic et de l'acculturation à l'informatique.\n" +
-                    "Accompagnement d'équipes de Développeurs et de DataScientists dans la conception et le déploiement de plateformes de traitement de données.\n" +
-                    "Automatisation des processus de mise en production (CI/CD).",
+                title: {
+                    fr: "Formateur & Consultant Data Engineering",
+                    en: "Data engineering trainer & consulant"
+                },
+                description: {
+                    fr :"Conseil et animation de formations autour de la stack Elastic et de l'acculturation à l'informatique.\n" +
+                        "Accompagnement d'équipes de Développeurs et de DataScientists dans la conception et le déploiement de plateformes de traitement de données.\n" +
+                        "Automatisation des processus de mise en production (CI/CD).",
+                    en: "Delivering support and animating training session around the Elastic stack and computer science acculturation\n" +
+                        "Support teams of Developers and Data Scientist to help them design and deploy data processing solutions\n" +
+                        "Setup automated production process (DevOps - CI/CD)."
+                },
             },
         ],
-        tech: ["React JS", "VueJS", "NodeJS", "MongoDB", "ElasticSearch", "Kafka", "GitLab", "Docker", "K8s", "AWS"]
+        tech: ["React JS", "Typescript", "VueJS", "NodeJS", "MongoDB", "ElasticSearch", "Kafka", "GitLab", "Docker", "K8s", "AWS"]
 
     },
     {
-        title: "Apprenti Ingénieur",
+        title: {
+            fr: "Apprenti Ingénieur",
+            en: "Junior Engineer"
+        },
         company: "EDF R&D",
         place: "Paris Saclay / Palo Alto, USA",
         date: {
             from: "Sept. 2015",
-            to: "Août 2018"
+            to: {
+                fr: "Août 2018",
+                en : "Aug 2018",
+            }
         },
-        description: "Apprentissage du métier d'ingénieur en intervenant sur différents projets. Du Deep Learning au développement" +
-            " web en suivant un fil rouge autour de la mise en place d'une solution BigData pour normaliser, stocker puis exploiter des données hétérogènes.",
+        description: {
+            fr: "Apprentissage du métier d'ingénieur en intervenant sur différents projets. Du Deep Learning au développement " +
+                "web en suivant un fil rouge autour de la mise en place d'une solution BigData pour normaliser, " +
+                "stocker puis exploiter des données hétérogènes.",
+            en: "Learning the Software Enginner job one project at a time. From Deep Learning to web development looking forward to build an heterogeneous DataLake to store and analyse normalized data."
+        },
         tech: ["Java", "Neo4j", "Kafka", "NodeJS", "AngularJS", "Python", "Tensorflow", "Keras", "CNN",
             "Gitlab", "Docker", "Nexus"]
 
     },
     {
-        title: "Stagiaire puis intérimaire",
+        title: {
+            fr: "Stagiaire puis intérimaire",
+            en: "Web-developer intern"
+        },
         company: "ENEDIS",
         place: "Clermont-Ferrand",
         date: {
@@ -85,7 +143,10 @@ export const experiences = [
 
 export const skills = [
     {
-        name: "Dev Frontend",
+        name: {
+            fr: "Dev Frontend",
+            en: "Frontend Dev"
+        },
         xp: 7,
         percentage: 90,
     },

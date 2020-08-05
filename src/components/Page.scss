@@ -161,6 +161,8 @@ $light-color: #bfdaf0;
     flex-direction: column;
     flex: 1;
 
+    margin-bottom: 70px;
+
     .main {
       margin: 0 0.5em;
       display: flex;
@@ -453,6 +455,10 @@ $light-color: #bfdaf0;
         font-size: 0.9em;
 
         margin: 0 0 0.15em;
+
+        .company{
+          font-weight: 600;
+        }
       }
 
       .description {
@@ -586,7 +592,9 @@ $light-color: #bfdaf0;
   footer {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     z-index: 600;
 
     .footer-container {
