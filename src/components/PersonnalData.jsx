@@ -69,7 +69,7 @@ const PersonnalData = () => {
     globalSetClear = setClear
     return <div className={'infos'}>
         <SensitiveInfo data={data.mail} icon={faEnvelope} clear={clear}/>
-        <Info icon={faBirthdayCake}><IntTextNode text={data.age}/></Info>
+        {/*<Info icon={faBirthdayCake}><IntTextNode text={data.age}/></Info>*/}
         <SensitiveInfo data={data.phone} icon={faPhone} clear={clear}/>
         <Info icon={faCar}><IntTextNode text={data.car}/></Info>
         {!clear &&

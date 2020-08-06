@@ -157,7 +157,10 @@ export default (props) => {
             <div className={'footer-container'}>
                 <div className={'hobbies'}>
                     <FontAwesomeIcon className={'icon'} icon={faMotorcycle}/>
-                    <p>Tech enthusiast, motard, photographe amateur et DIY</p>
+                    <p><IntTextNode text={{
+                        fr: "Tech enthusiast, motard, photographe amateur et DIY",
+                        en: "Tech enthusiast, biker, amateur photograph and DIY"
+                    }}/></p>
                 </div>
                 <div className={'links'}>
                     <a className={'link'} href={'https://github.com/dprslt'} title={"GitHub dprslt"}><FontAwesomeIcon icon={faGithub}/></a>

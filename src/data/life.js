@@ -8,7 +8,7 @@ export const formations = [
         date: {
             to: {
                 fr: "Avril 2020",
-                en: "Avril 2020"
+                en: "April 2020"
             },
         }
     },
@@ -28,7 +28,7 @@ export const formations = [
     {
         title: {
             fr: "ENSIMAG - Ingénierie des Systèmes d'information \nCursus en apprentissage",
-            en: "ENSIMAG - MD Computer Sciences Engineering \nApprenticeship training"
+            en: "ENSIMAG - MD Computer Science Engineering \nApprenticeship training"
         },
         secondary: "Grenoble INP, France",
         date: {
@@ -42,7 +42,7 @@ export const formations = [
     {
         title: {
             fr: "DUT Informatique, Filière Poursuite d'Etudes",
-            en: "Technical Degree - Computer Sciences"
+            en: "Technical Degree - Computer Science"
         },
         secondary: {
             fr: "IUT de Clermont-Ferrand, France",
@@ -78,7 +78,7 @@ export const experiences = [
                 description: {
                     fr :"Participation à la conception de plusieurs projets de développement logiciel.\n" +
                         "Co-responsable des développements Frontend pour le projet Européen COMMUTE et pour différents clients grand comptes.",
-                    en: "Design and implementation of various web solutions.\n" +
+                    en: "Design and implementation of various web solutions\n" +
                         "Lead frontend developer for the European project COMMUTE and for other large accounts customers such as EUROCONTROL"
                 },
             },
@@ -89,10 +89,10 @@ export const experiences = [
                 },
                 description: {
                     fr :"Conseil et animation de formations autour de la stack Elastic et de l'acculturation à l'informatique.\n" +
-                        "Accompagnement d'équipes de Développeurs et de DataScientists dans la conception et le déploiement de plateformes de traitement de données.\n" +
+                        "Accompagnement d'équipes de Développeurs et de Data Scientists dans la conception et le déploiement de plateformes de traitement de données.\n" +
                         "Automatisation des processus de mise en production (CI/CD).",
                     en: "Delivering support and animating training session around the Elastic stack and computer science acculturation\n" +
-                        "Support teams of Developers and Data Scientist to help them design and deploy data processing solutions\n" +
+                        "Support teams of Developers and Data Scientists to help them design and deploy data processing solutions\n" +
                         "Setup automated production process (DevOps - CI/CD)."
                 },
             },
@@ -103,7 +103,7 @@ export const experiences = [
     {
         title: {
             fr: "Apprenti Ingénieur",
-            en: "Junior Engineer"
+            en: "Software Engineer Intern"
         },
         company: "EDF R&D",
         place: "Paris Saclay / Palo Alto, USA",
@@ -118,7 +118,7 @@ export const experiences = [
             fr: "Apprentissage du métier d'ingénieur en intervenant sur différents projets. Du Deep Learning au développement " +
                 "web en suivant un fil rouge autour de la mise en place d'une solution BigData pour normaliser, " +
                 "stocker puis exploiter des données hétérogènes.",
-            en: "Learning the Software Enginner job one project at a time. From Deep Learning to web development looking forward to build an heterogeneous DataLake to store and analyse normalized data."
+            en: "Learning the Software Enginner job one project at a time.\nFrom Deep Learning to web development passing through microservices in order to build a normalized DataLake to store and analyse heterogeneous data."
         },
         tech: ["Java", "Neo4j", "Kafka", "NodeJS", "AngularJS", "Python", "Tensorflow", "Keras", "CNN",
             "Gitlab", "Docker", "Nexus"]
@@ -132,7 +132,10 @@ export const experiences = [
         company: "ENEDIS",
         place: "Clermont-Ferrand",
         date: {
-            from: "Avril 2015",
+            from: {
+                fr: "Avril 2015",
+                en: 'April 2015'
+            },
             to: "Août 2015"
         },
         tech: ["PHP", "CSS", "Javascript", "Postgresql", "SIG", "git"]
