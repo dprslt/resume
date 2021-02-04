@@ -89,7 +89,7 @@ const Page = (props) => {
             <div className={'row row-exp'} style={{flex: 1}}>
                 <div className={'main'}>
                     <Section className={"experiences"} title={headersTransl.exp} icon={faGlobeEurope}>
-                        {experiences.map(e => <Experience data={e} key={e.title.fr || e.title}/>)}
+                        {experiences.map(e => e.displayLevel !== 'none' ? <Experience data={e} key={e.title.fr || e.title}/> : null)}
                     </Section>
                     <Section className={"formations"} title={headersTransl.form} icon={faUniversity}>
                         {formations.map(e => <Formation data={e} key={e.title.fr || e.title}/>)}

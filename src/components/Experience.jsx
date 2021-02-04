@@ -39,7 +39,7 @@ const Experience = ({data}) => {
             }
 
             {
-                data.tech &&
+                data.tech && data.displayLevel !== 'compact' &&
                 <div className={'technologies'}>
                     <p className={'tech-title'}>Technologies :</p>
                     <p className={'tech-list'}><IntTextNode text={data.tech.join(', ')}/></p>
