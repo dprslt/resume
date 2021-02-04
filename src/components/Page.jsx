@@ -67,7 +67,7 @@ const headersTransl = {
 }
 
 
-export default (props) => {
+const Page = (props) => {
 
     return <div className={'page'}>
         <header>
@@ -172,3 +172,5 @@ export default (props) => {
 
     </div>
 }
+
+export default Page

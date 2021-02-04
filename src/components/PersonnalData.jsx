@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {faBirthdayCake, faCar, faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {faCar, faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import IntTextNode from "./InternationalTextNode";
 
