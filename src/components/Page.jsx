@@ -163,8 +163,9 @@ const Page = (props) => {
                     }}/></p>
                 </div>
                 <div className={'links'}>
-                    <a className={'link'} href={'https://github.com/dprslt'} title={"GitHub dprslt"}><FontAwesomeIcon icon={faGithub}/></a>
+                    <span className={'social-tag'}>@dprslt</span>
                     <a className={'link'} href={'https://www.linkedin.com/in/dprslt/'} title={'My profile'}><FontAwesomeIcon icon={faLinkedin}/></a>
+                    <a className={'link'} href={'https://github.com/dprslt'} title={"GitHub dprslt"}><FontAwesomeIcon icon={faGithub}/></a>
                 </div>
             </div>
         </footer>

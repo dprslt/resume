@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
 $main-color: #2b333c;
 $accent-color: #1879bb;
 $light-color: #bfdaf0;
 
 .page {
-
   @media print {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
@@ -17,12 +16,11 @@ $light-color: #bfdaf0;
 
   background-color: white;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   display: flex;
   flex-direction: column;
   position: relative;
-
 
   .df-col {
     display: flex;
@@ -35,7 +33,6 @@ $light-color: #bfdaf0;
   }
 
   header {
-
     position: relative;
     z-index: 900;
     display: flex;
@@ -55,7 +52,8 @@ $light-color: #bfdaf0;
       display: flex;
       flex-direction: row;
 
-      h1, h2 {
+      h1,
+      h2 {
         font-weight: normal;
       }
 
@@ -83,7 +81,7 @@ $light-color: #bfdaf0;
         text-align: right;
         position: relative;
 
-        .placeholder{
+        .placeholder {
           //display: none;
           display: flex;
           position: absolute;
@@ -91,7 +89,7 @@ $light-color: #bfdaf0;
           left: 0;
           height: 100%;
           width: 100%;
-          background-color: rgba(43,51,60,0.8);
+          background-color: rgba(43, 51, 60, 0.8);
           padding: 0 0.5em;
           align-items: center;
           justify-content: center;
@@ -102,7 +100,7 @@ $light-color: #bfdaf0;
             margin: 0;
             font-size: 1em;
           }
-          p{
+          p {
             margin: 0;
             font-size: 0.7em;
             opacity: 0.7;
@@ -110,26 +108,24 @@ $light-color: #bfdaf0;
           }
         }
 
-        &:hover{
-          .placeholder{
+        &:hover {
+          .placeholder {
             display: flex;
           }
         }
 
         .info {
-          margin: 0.10em;
+          margin: 0.1em;
           font-size: 0.8em;
           opacity: 0.8;
 
           .info-icon {
-            margin: 0 0 0 0.75em
+            margin: 0 0 0 0.75em;
           }
         }
       }
     }
-
   }
-
 
   .row {
     display: flex;
@@ -137,21 +133,21 @@ $light-color: #bfdaf0;
 
     &.row-exp {
       .main {
-        flex: 15
+        flex: 15;
       }
 
       .col {
-        flex: 7
+        flex: 7;
       }
     }
 
     &.row-form {
       .main {
-        flex: 17
+        flex: 17;
       }
 
       .col {
-        flex: 9
+        flex: 9;
       }
     }
   }
@@ -171,7 +167,6 @@ $light-color: #bfdaf0;
     }
 
     .col {
-
       padding-top: 2em;
       padding-bottom: 1em;
       margin-bottom: -0.5em;
@@ -232,14 +227,12 @@ $light-color: #bfdaf0;
       }
 
       .skills {
-
         display: flex;
         flex-direction: column;
 
         padding: 0 1em;
 
         .skill {
-
           &:not(:last-child) {
             margin-bottom: 0.5em;
           }
@@ -269,7 +262,7 @@ $light-color: #bfdaf0;
 
           .progress-bar-container {
             margin: 0.1em 0.1em;
-            height: 0.10cm;
+            height: 0.1cm;
             background-color: $main-color;
             opacity: 0.5;
 
@@ -278,7 +271,6 @@ $light-color: #bfdaf0;
               background-color: $accent-color;
             }
           }
-
         }
       }
 
@@ -292,7 +284,7 @@ $light-color: #bfdaf0;
         display: flex;
         flex-direction: row;
 
-        &:not(:last-child){
+        &:not(:last-child) {
           margin-bottom: 0.75em;
         }
 
@@ -337,7 +329,6 @@ $light-color: #bfdaf0;
     }
 
     .section {
-
       margin: 0.5em;
 
       .sec-header {
@@ -367,10 +358,10 @@ $light-color: #bfdaf0;
         padding-left: 1rem;
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           border-left: solid 2px $accent-color;
-          opacity: .6;
+          opacity: 0.6;
           left: 0;
           top: 0;
           bottom: 0;
@@ -387,27 +378,23 @@ $light-color: #bfdaf0;
         font-variant: all-small-caps;
         text-transform: uppercase;
 
-        .from, .to {
+        .from,
+        .to {
           font-variant: normal;
           font-weight: 600;
           margin: 0 0.25em;
         }
-
       }
     }
-
-
   }
 
   .section.experiences {
     margin-top: 1em;
     margin-right: 1em;
 
-
     .experience {
-
       &::before {
-        content: ' ';
+        content: " ";
         width: 6px;
         height: 6px;
         border-radius: 50%;
@@ -441,7 +428,6 @@ $light-color: #bfdaf0;
           margin-top: 0.25em;
           padding-left: 0.5em;
         }
-
       }
 
       .exp-content {
@@ -457,7 +443,7 @@ $light-color: #bfdaf0;
 
         margin: 0 0 0.15em;
 
-        .company{
+        .company {
           font-weight: 600;
         }
       }
@@ -474,7 +460,6 @@ $light-color: #bfdaf0;
       }
 
       .activities {
-
         padding-right: 0.5em;
 
         .activity {
@@ -514,7 +499,6 @@ $light-color: #bfdaf0;
           padding-left: 0.5em;
         }
       }
-
     }
   }
 
@@ -527,18 +511,17 @@ $light-color: #bfdaf0;
         margin-bottom: 0.75em;
       }
 
-
       .form-content {
         h3 {
           font-weight: 600;
           font-size: 1.07rem;
           position: relative;
           line-height: 1em;
-          margin: 0.10em 0;
+          margin: 0.1em 0;
           white-space: pre-wrap;
 
           &::before {
-            content: ' ';
+            content: " ";
             width: 6px;
             height: 6px;
             border-radius: 50%;
@@ -547,7 +530,6 @@ $light-color: #bfdaf0;
             left: calc(-1rem - 2px);
             top: calc(50% - 3px);
           }
-
         }
 
         .secondary {
@@ -571,7 +553,6 @@ $light-color: #bfdaf0;
     align-items: center;
     flex: 1;
 
-
     img {
       max-height: 70px;
     }
@@ -589,7 +570,6 @@ $light-color: #bfdaf0;
     border-radius: 50%;
   }
 
-
   footer {
     display: flex;
     flex-direction: column;
@@ -603,6 +583,7 @@ $light-color: #bfdaf0;
       background-color: $main-color;
       display: flex;
       flex-direction: row;
+      align-items: center;
       padding: 0em 1em 0.5em;
 
       height: 3em;
@@ -632,19 +613,26 @@ $light-color: #bfdaf0;
         align-items: center;
         flex: 1;
         font-size: 0.7em;
-
       }
 
       .links {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        margin-bottom: 0.5em;
         font-size: 1.3em;
 
         .link {
           margin: 0 0.5em;
         }
+
+        .social-tag {
+          font-size: 0.7em;
+          font-weight: 600;
+          margin: 0 0.5em;
+          opacity: 0.6;
+        }
       }
     }
   }
-
 }
