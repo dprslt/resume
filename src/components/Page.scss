@@ -132,6 +132,7 @@ $light-color: #bfdaf0;
     flex-direction: row;
 
     &.row-exp {
+      flex: 1;
       .main {
         flex: 15;
       }

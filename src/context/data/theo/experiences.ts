@@ -1,66 +1,8 @@
-export const formations = [
-  {
-    title: {
-      fr: "Coursera - Programming with Google Go",
-      en: "Coursera - Programming with Google Go",
-    },
-    secondary: "TDL2FSXEVUJV",
-    date: {
-      to: {
-        fr: "Avril 2020",
-        en: "April 2020",
-      },
-    },
-  },
-  {
-    title: {
-      fr: "AWS - Solution Architect Associate",
-      en: "AWS - Solution Architect Associate",
-    },
-    secondary: "KM1 X3VLKBNV1 QG56",
-    date: {
-      to: {
-        fr: "Juin 2019",
-        en: "June 2019",
-      },
-    },
-  },
-  {
-    title: {
-      fr:
-        "ENSIMAG - Ingénierie des Systèmes d'information \nCursus en apprentissage",
-      en: "ENSIMAG - MD Computer Science Engineering \nApprenticeship training",
-    },
-    secondary: "Grenoble INP, France",
-    date: {
-      to: {
-        fr: "Août 2018",
-        en: "Aug 2018",
-      },
-      from: "Sep. 2015",
-    },
-  },
-  {
-    title: {
-      fr: "DUT Informatique, Filière Poursuite d'Etudes",
-      en: "Technical Degree - Computer Science",
-    },
-    secondary: {
-      fr: "IUT de Clermont-Ferrand, France",
-      en: "IUT of Clermont-Ferrand, France",
-    },
-    date: {
-      to: {
-        fr: "Juin 2015",
-        en: "June 2015",
-      },
-      from: "Sep. 2013",
-    },
-  },
-];
+import { ExperienceType } from "./../../types/infos/Experience";
 
-export const experiences = [
+export const experiences: Array<ExperienceType> = [
   {
+    displayLevel: "full",
     title: {
       fr: "Développeur web",
       en: "Frontend engineer",
@@ -71,20 +13,15 @@ export const experiences = [
       from: "Sept. 2020",
     },
     description: {
-        fr:
-          "Architecture et développement du produit GRC360 à destination des communes et des leurs citoyens.",
-        en:
-          "Designin and building the GRC360 product to ease dialog between cities and citizens."
+      fr:
+        "Architecture et développement du produit GRC360 à destination des communes et des leurs citoyens.",
+      en:
+        "Designin and building the GRC360 product to ease dialog between cities and citizens.",
     },
-    tech: [
-        "React",
-        "Redux Toolkit",
-        "Leaflet",
-        "NodeJS",
-        "Docker Swarm"
-      ],
+    tech: ["React", "Redux Toolkit", "Leaflet", "NodeJS", "Docker Swarm"],
   },
   {
+    displayLevel: "full",
     title: {
       fr: "Ingénieur d'études",
       en: "Software Engineer",
@@ -155,7 +92,7 @@ export const experiences = [
         en: "Aug 2018",
       },
     },
-    displayLevel: 'compact',
+    displayLevel: "compact",
     description: {
       fr:
         "Apprentissage du métier d'ingénieur en intervenant sur différents projets. Du Deep Learning au développement " +
@@ -186,7 +123,7 @@ export const experiences = [
     },
     company: "ENEDIS",
     place: "Clermont-Ferrand",
-    displayLevel: 'none',
+    displayLevel: "none",
     date: {
       from: {
         fr: "Avril 2015",
@@ -195,41 +132,5 @@ export const experiences = [
       to: "Août 2015",
     },
     tech: ["PHP", "CSS", "Javascript", "Postgresql", "SIG", "git"],
-  },
-];
-
-export const skills = [
-  {
-    name: {
-      fr: "Dev Frontend",
-      en: "Frontend Dev",
-    },
-    xp: 7,
-    percentage: 90,
-  },
-  {
-    name: "Node JS",
-    xp: 5,
-    percentage: 75,
-  },
-  {
-    name: "NoSQL",
-    xp: 5,
-    percentage: 70,
-  },
-  {
-    name: "Architecture",
-    xp: 2,
-    percentage: 50,
-  },
-  {
-    name: "AWS",
-    xp: 2,
-    percentage: 60,
-  },
-  {
-    name: "Docker & Kubernetes",
-    xp: 4,
-    percentage: 75,
   },
 ];
