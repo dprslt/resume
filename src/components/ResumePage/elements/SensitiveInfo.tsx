@@ -1,7 +1,7 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { TargetableInfo } from "../../../context/types/resume-infos/PersonalData";
+import { TargetableInfo } from "../../../types/resume-infos/PersonalData";
 
 type SensitiveInfoProps = {
   clear: boolean;

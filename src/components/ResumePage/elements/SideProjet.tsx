@@ -1,5 +1,5 @@
 import React from "react";
-import { SideProjectType } from "../../../context/types/resume-infos/SideProject";
+import { SideProjectType } from "../../../types/resume-infos/SideProject";
 import { useI18nText } from "../../../hooks/useI18nText";
 import I18nTextNode from "../../I18nTextNode";
 

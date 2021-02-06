@@ -1,29 +1,32 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { ExperienceType } from "../../../types/resume-infos/Experience";
 import I18nTextNode from "../../I18nTextNode";
-import { ExperienceType } from "../../../context/types/resume-infos/Experience";
 
 type ExperienceProps = {
   data: ExperienceType;
 };
 
 const Experience: React.FunctionComponent<ExperienceProps> = ({ data }) => {
+  const { t } = useTranslation(); 
+
   return (
     <div className={"experience"}>
       <div className={"date"}>
         {data.date.to ? (
           <>
-            <I18nTextNode text={{ fr: "De", en: "From" }} />{" "}
+            {t('from')}{" "}
             <span className={"from"}>
               <I18nTextNode text={data.date.from} />
             </span>{" "}
-            <I18nTextNode text={{ fr: "à", en: "to" }} />{" "}
+            {t('to')}{" "}
             <span className={"to"}>
               <I18nTextNode text={data.date.to} />
             </span>
           </>
         ) : (
           <>
-            <I18nTextNode text={{ fr: "Depuis", en: "Since" }} />{" "}
+            {t('since')}{" "}
             <span className={"from"}>
               <I18nTextNode text={data.date.from} />
             </span>
@@ -74,7 +77,7 @@ const Experience: React.FunctionComponent<ExperienceProps> = ({ data }) => {
 
         {data.tech && data.displayLevel !== "compact" && (
           <div className={"technologies"}>
-            <p className={"tech-title"}>Technologies :</p>
+            <p className={"tech-title"}>{t('techs_headers')} :</p>
             <p className={"tech-list"}>
               <I18nTextNode text={data.tech.join(", ")} />
             </p>

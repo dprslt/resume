@@ -1,24 +1,22 @@
-import React, { useContext } from "react";
-import { IntContext } from "../App";
-import { Lang } from "../context/types/i18n";
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Lang } from "../types/i18n";
 import FlagIcon from "../utils/FlagIcon";
 
 type LangFlagProps = {
   locale: Lang;
   flagLocale: string;
-  onClick: (locale: Lang) => unknown;
 };
 
 const LangFlag: React.FunctionComponent<LangFlagProps> = ({
   locale,
   flagLocale,
-  onClick,
 }) => {
-  const context = useContext(IntContext);
+  const { i18n } = useTranslation();
   return (
     <div
-      className={`lang-btn ${context.lang === locale ? "selected" : ""}`}
-      onClick={() => onClick(locale)}
+      className={`lang-btn ${i18n.language === locale ? "selected" : ""}`}
+      onClick={() => i18n.changeLanguage(locale)}
     >
       <FlagIcon code={flagLocale} />
     </div>

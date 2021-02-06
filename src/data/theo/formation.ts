@@ -1,4 +1,4 @@
-import { FormationType } from "../types/resume-infos/Formation";
+import { FormationType } from "../../types/resume-infos/Formation";
 
 export const formations: Array<FormationType> = [
   {

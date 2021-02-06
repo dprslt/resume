@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "../../../context/theo/skills";
+import { skills } from "../../../data/theo/skills";
 import { useI18nTextOpener } from "../../../hooks/useI18nText";
 import I18nTextNode from "../../I18nTextNode";
 import Skill from "../elements/Skill";

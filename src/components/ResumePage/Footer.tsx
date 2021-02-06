@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Bezel from "./design/Bezel";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import I18nTextNode from "../I18nTextNode";
-import { personalData } from "../../context/theo/personalData";
+import { personalData } from "../../data/theo/personalData";
 
 type FooterProps = {};
 

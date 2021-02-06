@@ -1,11 +1,11 @@
-import { IntContext } from "./../App";
-import { useContext } from "react";
-import { I18nText } from "./../context/types/i18n";
+import { I18nText, Lang } from "./../types/i18n";
+import { useTranslation } from "react-i18next";
 
 export type I18nTextOpener = (node: I18nText) => string;
 export const useI18nTextOpener = (): I18nTextOpener => {
-  const context = useContext(IntContext);
-  const lang = context.lang;
+  const { i18n } = useTranslation();
+
+  const lang = i18n.language as Lang;
   return (node) => {
     if (typeof node === "string") {
       return node;

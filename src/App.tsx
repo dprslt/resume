@@ -1,31 +1,21 @@
-import React, { createContext, FC, useCallback, useState } from "react";
+import React, { FC } from "react";
 import "./App.scss";
 import Page from "./components/ResumePage/Page";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import I18nTextNode from "./components/I18nTextNode";
 import LangFlag from "./components/LangFlag";
-import { Lang } from "./context/types/i18n";
+import "./setupI18n.ts";
+import { useTranslation } from "react-i18next";
 
-type IntContextType = { lang: Lang };
-export const IntContext = createContext<IntContextType>({ lang: "fr" });
 
 const App: FC = () => {
-  const [int, setLang] = useState<IntContextType>({ lang: "fr" });
-
-  const localeChanged = useCallback(
-    (locale: Lang) => {
-      setLang({ lang: locale });
-    },
-    [setLang]
-  );
+  const { t } = useTranslation(); 
 
   return (
     <div className="App">
-      <IntContext.Provider value={int}>
         <div className={"int"}>
-          <LangFlag locale={"fr"} flagLocale={"fr"} onClick={localeChanged} />
-          <LangFlag locale={"en"} flagLocale={"us"} onClick={localeChanged} />
+          <LangFlag locale={"fr"} flagLocale={"fr"} />
+          <LangFlag locale={"en"} flagLocale={"us"} />
         </div>
 
         <Page />
@@ -39,15 +29,10 @@ const App: FC = () => {
                 window.print();
               }}
             >
-              <I18nTextNode text={{ fr: "Imprimer", en: "Print" }} />
+              {t('print')}
             </a>
             {' '}
-            <I18nTextNode
-              text={{
-                fr: "cette page pour avoir un obtenir mon CV au format PDF.",
-                en: "this page to produce my resume as a PDF file.",
-              }}
-            />
+            {t('print_this_page')}
           </p>
           <p>
             Build with React, Sass and{" "}
@@ -55,7 +40,6 @@ const App: FC = () => {
           </p>
           <p>&copy; {new Date().getFullYear()} Theo Depresle</p>
         </div>
-      </IntContext.Provider>
     </div>
   );
 };

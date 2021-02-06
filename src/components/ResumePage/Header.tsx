@@ -1,5 +1,5 @@
 import React from "react";
-import { personalData } from "../../context/theo/personalData";
+import { personalData } from "../../data/theo/personalData";
 import Bezel from "./design/Bezel";
 import I18nTextNode from "../I18nTextNode";
 import PersonnalData from "./PersonnalData";

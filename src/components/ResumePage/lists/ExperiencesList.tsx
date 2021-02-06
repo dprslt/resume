@@ -1,6 +1,7 @@
 import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import { experiences } from "../../../context/theo/experiences";
+import { useTranslation } from "react-i18next";
+import { experiences } from "../../../data/theo/experiences";
 import { useI18nTextOpener } from "../../../hooks/useI18nText";
 import Experience from "../elements/Experience";
 import Section from "../elements/Section";
@@ -9,13 +10,12 @@ type ExperiencesListProps = {};
 
 const ExperiencesList: React.FunctionComponent<ExperiencesListProps> = () => {
   const i18nOpener = useI18nTextOpener();
+  const { t } = useTranslation(); 
+
   return (
     <Section
       className={"experiences"}
-      title={{
-        fr: "Expériences",
-        en: "Experiences",
-      }}
+      title={t("experience")}
       icon={faGlobeEurope}
     >
       {experiences.map((e) =>

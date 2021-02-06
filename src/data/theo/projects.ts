@@ -5,7 +5,7 @@ import aurora from "../../static/aurora.png";
 import tpth from "../../static/tpth.png";
 import cake from "../../static/cake.png";
 import lego from "../../static/lego.png";
-import { SideProjectType } from "../types/resume-infos/SideProject";
+import { SideProjectType } from "../../types/resume-infos/SideProject";
 
 export const projets: Array<SideProjectType> = [
   {

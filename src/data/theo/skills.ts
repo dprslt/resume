@@ -1,4 +1,4 @@
-import { SkillType } from "../types/resume-infos/Skill";
+import { SkillType } from "../../types/resume-infos/Skill";
 
 export const skills: Array<SkillType> = [
   {
