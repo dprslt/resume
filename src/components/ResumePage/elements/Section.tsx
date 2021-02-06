@@ -1,6 +1,6 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import React from "react";
-import { I18nText } from "../../context/types/i18n";
+import { I18nText } from "../../../context/types/i18n";
 import SectionTitle from "./SectionTitle";
 
 type SectionProps = {

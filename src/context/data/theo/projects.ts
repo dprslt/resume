@@ -1,11 +1,11 @@
 import { SideProjectType } from "../../types/infos/SideProject";
-import findOrDraw from "../static/findOrDraw.png";
-import dsc from "../static/dsc.png";
-import kyc from "../static/kyc.png";
-import aurora from "../static/aurora.png";
-import tpth from "../static/tpth.png";
-import cake from "../static/cake.png";
-import lego from "../static/lego.png";
+import findOrDraw from "../../../static/findOrDraw.png";
+import dsc from "../../../static/dsc.png";
+import kyc from "../../../static/kyc.png";
+import aurora from "../../../static/aurora.png";
+import tpth from "../../../static/tpth.png";
+import cake from "../../../static/cake.png";
+import lego from "../../../static/lego.png";
 
 export const projets: Array<SideProjectType> = [
   {

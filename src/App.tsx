@@ -1,10 +1,10 @@
-import React, { createContext, FC, useState } from "react";
+import React, { createContext, FC, useCallback, useState } from "react";
 import "./App.scss";
-import Page from "./components/Page";
+import Page from "./components/ResumePage/Page";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import FlagIcon from "./utils/FlagIcon";
 import I18nTextNode from "./components/I18nTextNode";
+import LangFlag from "./components/LangFlag";
 import { Lang } from "./context/types/i18n";
 
 type IntContextType = { lang: Lang };
@@ -13,26 +13,19 @@ export const IntContext = createContext<IntContextType>({ lang: "fr" });
 const App: FC = () => {
   const [int, setLang] = useState<IntContextType>({ lang: "fr" });
 
+  const localeChanged = useCallback(
+    (locale: string) => {
+      setLang({ lang: "fr" });
+    },
+    [setLang]
+  );
+
   return (
     <div className="App">
       <IntContext.Provider value={int}>
         <div className={"int"}>
-          <div
-            className={`lang-btn ${int.lang === "fr" ? "selected" : ""}`}
-            onClick={() =>
-              setLang((prevState) => ({ ...prevState, lang: "fr" }))
-            }
-          >
-            <FlagIcon code={"fr"} />
-          </div>
-          <div
-            className={`lang-btn ${int.lang === "en" ? "selected" : ""}`}
-            onClick={() =>
-              setLang((prevState) => ({ ...prevState, lang: "en" }))
-            }
-          >
-            <FlagIcon code={"us"} />
-          </div>
+          <LangFlag locale={"fr"} flagLocale={"fr"} onClick={localeChanged} />
+          <LangFlag locale={"en"} flagLocale={"us"} onClick={localeChanged} />
         </div>
 
         <Page />

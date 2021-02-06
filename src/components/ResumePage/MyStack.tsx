@@ -1,10 +1,10 @@
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import docker from "../static/docker.png";
-import mongo from "../static/mongo.png";
-import node from "../static/node.png";
-import react from "../static/react.png";
+import docker from "../../static/docker.png";
+import mongo from "../../static/mongo.png";
+import node from "../../static/node.png";
+import react from "../../static/react.png";
 import I18nTextNode from "../I18nTextNode";
 
 type MyStackProps = {};

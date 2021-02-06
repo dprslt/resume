@@ -3,7 +3,7 @@ import React from "react";
 import { experiences } from "../../../context/data/theo/experiences";
 import { useI18nTextOpener } from "../../../hooks/useI18nText";
 import Experience from "../elements/Experience";
-import Section from "../framework/Section";
+import Section from "../elements/Section";
 
 type ExperiencesListProps = {};
 

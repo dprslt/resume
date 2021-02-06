@@ -3,7 +3,7 @@ import React from "react";
 import { formations } from "../../../context/data/theo/formation";
 import { useI18nTextOpener } from "../../../hooks/useI18nText";
 import Formation from "../elements/Formation";
-import Section from "../framework/Section";
+import Section from "../elements/Section";
 
 type FormationListProps = {};
 

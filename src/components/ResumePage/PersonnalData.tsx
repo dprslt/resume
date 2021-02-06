@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { faCar, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import I18nTextNode from "./I18nTextNode";
-import { personalData } from "../context/data/theo/personalData";
-import Info from "./ResumePage/elements/Info";
-import SensitiveInfo from "./framework/SensitiveInfo";
+import { personalData } from "../../context/data/theo/personalData";
+import SensitiveInfo from "./elements/SensitiveInfo";
+import I18nTextNode from "../I18nTextNode";
+import Info from "./elements/Info";
 
 const contextText = {
   title: {

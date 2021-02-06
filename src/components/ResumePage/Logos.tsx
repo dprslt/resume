@@ -1,6 +1,6 @@
 import React from "react";
-import imag from "../static/imag.png";
-import aws from "../static/aws.png";
+import imag from "../../static/imag.png";
+import aws from "../../static/aws.png";
 
 type LogosProps = {};
 
