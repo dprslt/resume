@@ -1,6 +1,6 @@
 import React from "react";
 import I18nTextNode from "../../I18nTextNode";
-import { ExperienceType } from "../../../context/types/infos/Experience";
+import { ExperienceType } from "../../../context/types/resume-infos/Experience";
 
 type ExperienceProps = {
   data: ExperienceType;

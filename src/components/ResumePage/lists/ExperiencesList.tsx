@@ -1,6 +1,6 @@
 import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import { experiences } from "../../../context/data/theo/experiences";
+import { experiences } from "../../../context/theo/experiences";
 import { useI18nTextOpener } from "../../../hooks/useI18nText";
 import Experience from "../elements/Experience";
 import Section from "../elements/Section";

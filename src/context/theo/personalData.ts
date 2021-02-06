@@ -1,5 +1,5 @@
 import { faMotorcycle } from "@fortawesome/free-solid-svg-icons";
-import { PersonalDataType } from "../../types/infos/PersonalData";
+import { PersonalDataType } from "../types/resume-infos/PersonalData";
 
 export const personalData: PersonalDataType = {
   name: "Théo",

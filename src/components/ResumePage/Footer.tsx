@@ -1,26 +1,16 @@
-import React, { useContext } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Bezel from "./design/Bezel";
-import { PageContext } from "../../context/PageContext";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import I18nTextNode from "../I18nTextNode";
-import { personalData } from "../../context/data/theo/personalData";
+import { personalData } from "../../context/theo/personalData";
 
 type FooterProps = {};
 
 const Footer: React.FunctionComponent<FooterProps> = () => {
-  const context = useContext(PageContext);
-  const { theme } = context.resume;
-
   return (
     <footer>
-      <Bezel
-        height={3}
-        color={theme.footerColor}
-        top={true}
-        right={false}
-        base={1}
-      />
+      <Bezel height={3} color={"#2b333c"} top={true} right={false} base={1} />
       <div className={"footer-container"}>
         <div className={"hobbies"}>
           <FontAwesomeIcon

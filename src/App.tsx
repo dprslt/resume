@@ -14,8 +14,8 @@ const App: FC = () => {
   const [int, setLang] = useState<IntContextType>({ lang: "fr" });
 
   const localeChanged = useCallback(
-    (locale: string) => {
-      setLang({ lang: "fr" });
+    (locale: Lang) => {
+      setLang({ lang: locale });
     },
     [setLang]
   );
@@ -29,6 +29,7 @@ const App: FC = () => {
         </div>
 
         <Page />
+
         <div className={"notes"}>
           <p>
             <a
@@ -40,10 +41,11 @@ const App: FC = () => {
             >
               <I18nTextNode text={{ fr: "Imprimer", en: "Print" }} />
             </a>
+            {' '}
             <I18nTextNode
               text={{
-                fr: " cette page pour avoir un obtenir mon CV au format PDF.",
-                en: " this page to produce my resume as a PDF file.",
+                fr: "cette page pour avoir un obtenir mon CV au format PDF.",
+                en: "this page to produce my resume as a PDF file.",
               }}
             />
           </p>

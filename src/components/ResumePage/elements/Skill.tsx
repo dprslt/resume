@@ -1,5 +1,5 @@
 import React from "react";
-import { SkillType } from "../../../context/types/infos/Skill";
+import { SkillType } from "../../../context/types/resume-infos/Skill";
 import I18nTextNode from "../../I18nTextNode";
 
 type SkillProps = {

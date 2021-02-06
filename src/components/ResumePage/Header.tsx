@@ -1,14 +1,10 @@
-import React, { useContext } from "react";
-import { personalData } from "../../context/data/theo/personalData";
-import { PageContext } from "../../context/PageContext";
+import React from "react";
+import { personalData } from "../../context/theo/personalData";
 import Bezel from "./design/Bezel";
 import I18nTextNode from "../I18nTextNode";
 import PersonnalData from "./PersonnalData";
 
 const Header: React.FunctionComponent = () => {
-  const context = useContext(PageContext);
-  const { theme } = context.resume;
-
   return (
     <header>
       <div className={"header-bg"}>
@@ -24,7 +20,7 @@ const Header: React.FunctionComponent = () => {
           <PersonnalData />
         </div>
       </div>
-      <Bezel height={3} color={theme.headerColor} right={true} base={1} />
+      <Bezel height={3} color={'#2b333c'} right={true} base={1} />
     </header>
   );
 };

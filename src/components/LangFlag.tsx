@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { IntContext } from "../App";
+import { Lang } from "../context/types/i18n";
 import FlagIcon from "../utils/FlagIcon";
 
 type LangFlagProps = {
-  locale: string;
+  locale: Lang;
   flagLocale: string;
-  onClick: (locale: string) => unknown;
+  onClick: (locale: Lang) => unknown;
 };
 
 const LangFlag: React.FunctionComponent<LangFlagProps> = ({

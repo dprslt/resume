@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { faCar, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { personalData } from "../../context/data/theo/personalData";
+import { personalData } from "../../context/theo/personalData";
 import SensitiveInfo from "./elements/SensitiveInfo";
 import I18nTextNode from "../I18nTextNode";
 import Info from "./elements/Info";

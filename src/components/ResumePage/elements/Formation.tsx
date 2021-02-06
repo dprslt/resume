@@ -1,5 +1,5 @@
 import React from "react";
-import { FormationType } from "../../../context/types/infos/Formation";
+import { FormationType } from "../../../context/types/resume-infos/Formation";
 import I18nTextNode from "../../I18nTextNode";
 
 type FormationProps = {

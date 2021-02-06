@@ -1,4 +1,4 @@
-import { I18nText } from "./../i18n";
+import { I18nText } from "../i18n";
 export interface FormationType {
   date: {
     from: I18nText;

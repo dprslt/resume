@@ -1,4 +1,4 @@
-import { ExperienceType } from "./../../types/infos/Experience";
+import { ExperienceType } from "../types/resume-infos/Experience";
 
 export const experiences: Array<ExperienceType> = [
   {

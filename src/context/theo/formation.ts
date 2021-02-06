@@ -1,4 +1,5 @@
-import { FormationType } from "./../../types/infos/Formation";
+import { FormationType } from "../types/resume-infos/Formation";
+
 export const formations: Array<FormationType> = [
   {
     title: {
