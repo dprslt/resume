@@ -1,7 +1,7 @@
 import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import I18nTextNode from "../framework/I18nTextNode";
+import I18nTextNode from "../../I18nTextNode";
 
 type LangsListProps = {};
 

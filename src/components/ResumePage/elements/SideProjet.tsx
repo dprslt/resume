@@ -1,7 +1,7 @@
 import React from "react";
-import { SideProjectType } from "../../context/types/infos/SideProject";
-import { useI18nText } from "../../hooks/useI18nText";
-import I18nTextNode from "../framework/I18nTextNode";
+import { SideProjectType } from "../../../context/types/infos/SideProject";
+import { useI18nText } from "../../../hooks/useI18nText";
+import I18nTextNode from "../../I18nTextNode";
 
 type SideProjectProps = {
   project: SideProjectType;

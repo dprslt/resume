@@ -4,7 +4,7 @@ import Page from "./components/Page";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FlagIcon from "./utils/FlagIcon";
-import I18nTextNode from "./components/framework/I18nTextNode";
+import I18nTextNode from "./components/I18nTextNode";
 import { Lang } from "./context/types/i18n";
 
 type IntContextType = { lang: Lang };

@@ -5,7 +5,7 @@ import docker from "../static/docker.png";
 import mongo from "../static/mongo.png";
 import node from "../static/node.png";
 import react from "../static/react.png";
-import I18nTextNode from "./framework/I18nTextNode";
+import I18nTextNode from "../I18nTextNode";
 
 type MyStackProps = {};
 

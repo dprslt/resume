@@ -2,13 +2,13 @@ import React from "react";
 
 import "./Page.scss";
 import Header from "./Header";
-import Footer from "./Footer";
-import ExperiencesList from "./lists/ExperiencesList";
-import FormationsList from "./lists/FormationsList";
+import Footer from "./ResumePage/Footer";
+import ExperiencesList from "./ResumePage/lists/ExperiencesList";
+import FormationsList from "./ResumePage/lists/FormationsList";
 import Logos from "./Logos";
-import SkillsList from "./lists/SkillsList";
-import LangsList from "./lists/LangsList";
-import SideProjectsList from "./lists/SideProjectsList";
+import SkillsList from "./ResumePage/lists/SkillsList";
+import LangsList from "./ResumePage/lists/LangsList";
+import SideProjectsList from "./ResumePage/lists/SideProjectsList";
 import MyStack from "./MyStack";
 
 const Page = () => {

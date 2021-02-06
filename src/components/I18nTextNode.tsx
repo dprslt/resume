@@ -1,6 +1,6 @@
 import { FC, useContext } from "react";
-import { IntContext } from "../../App";
-import { I18nText } from "../../context/types/i18n";
+import { IntContext } from "../App";
+import { I18nText } from "../context/types/i18n";
 
 interface I18nTextNodeProps {
   text: I18nText;

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { personalData } from "../context/data/theo/personalData";
 import { PageContext } from "../context/PageContext";
-import Bezel from "./design/Bezel";
-import I18nTextNode from "./framework/I18nTextNode";
+import Bezel from "./ResumePage/design/Bezel";
+import I18nTextNode from "./I18nTextNode";
 import PersonnalData from "./PersonnalData";
 
 const Header: React.FunctionComponent = () => {

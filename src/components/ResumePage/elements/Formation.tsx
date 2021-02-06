@@ -1,6 +1,6 @@
 import React from "react";
-import { FormationType } from "../../context/types/infos/Formation";
-import I18nTextNode from "../framework/I18nTextNode";
+import { FormationType } from "../../../context/types/infos/Formation";
+import I18nTextNode from "../../I18nTextNode";
 
 type FormationProps = {
   data: FormationType;

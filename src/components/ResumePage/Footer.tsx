@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Bezel from "./design/Bezel";
-import { PageContext } from "../context/PageContext";
+import { PageContext } from "../../context/PageContext";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import I18nTextNode from "./framework/I18nTextNode";
-import { personalData } from "../context/data/theo/personalData";
+import I18nTextNode from "../I18nTextNode";
+import { personalData } from "../../context/data/theo/personalData";
 
 type FooterProps = {};
 

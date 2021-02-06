@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { faCar, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import I18nTextNode from "./framework/I18nTextNode";
+import I18nTextNode from "./I18nTextNode";
 import { personalData } from "../context/data/theo/personalData";
-import Info from "./framework/Info";
+import Info from "./ResumePage/elements/Info";
 import SensitiveInfo from "./framework/SensitiveInfo";
 
 const contextText = {
