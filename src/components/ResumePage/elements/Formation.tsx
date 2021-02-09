@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { FormationType } from "../../../types/resume-infos/Formation";
 import I18nTextNode from "../../I18nTextNode";
 
@@ -7,16 +8,19 @@ type FormationProps = {
 };
 
 const Formation: React.FunctionComponent<FormationProps> = ({ data }) => {
+  const { t } = useTranslation(); 
+
   return (
     <div className={"formation"}>
       <div className={"date"}>
         {data.date.to ? (
           <>
-            <I18nTextNode text={{ fr: "De", en: "From" }} />
+            {t('from')}
+            {" "}
             <span className={"from"}>
               <I18nTextNode text={data.date.from} />
             </span>
-            <I18nTextNode text={{ fr: "à", en: "to" }} />
+            {t('to')}{" "}
             <span className={"to"}>
               <I18nTextNode text={data.date.to} />
             </span>

@@ -10,6 +10,7 @@ i18n
     lng: "fr",
     fallbackLng: "fr",
     load: "all",
+    debug: false,
 
     keySeparator: false, // we do not use keys in form messages.welcome
 

@@ -4,22 +4,8 @@ import { personalData } from "../../data/theo/personalData";
 import SensitiveInfo from "./elements/SensitiveInfo";
 import I18nTextNode from "../I18nTextNode";
 import Info from "./elements/Info";
+import { useTranslation } from "react-i18next";
 
-const contextText = {
-  title: {
-    fr: "Contactez moi !",
-    en: "Get in touch !",
-  },
-  p1: {
-    fr:
-      "Ces informations sont masquées pour éviter d'être récupérées par des robots.",
-    en: "Theses data are hidden to avoid automatic scrapping",
-  },
-  p2: {
-    fr: "Cliquez ici pour les afficher.",
-    en: "Click here to display them.",
-  },
-};
 
 const PersonnalData = () => {
   const [clear, setClear] = useState(false);
@@ -32,6 +18,8 @@ const PersonnalData = () => {
     };
   }, [setClear]);
 
+  const { t } = useTranslation();
+
   return (
     <div className={"infos"}>
       <SensitiveInfo data={personalData.mail} icon={faEnvelope} clear={clear} />
@@ -43,13 +31,13 @@ const PersonnalData = () => {
       {!clear && (
         <div className={"placeholder"} onClick={() => setClear(true)}>
           <h3>
-            <I18nTextNode text={contextText.title} />
+            {t('contact_me')}
           </h3>
           <p>
-            <I18nTextNode text={contextText.p1} />
+            {t('contact_part_1')}
           </p>
           <p>
-            <I18nTextNode text={contextText.p2} />
+            {t('contact_part_2')}
           </p>
         </div>
       )}

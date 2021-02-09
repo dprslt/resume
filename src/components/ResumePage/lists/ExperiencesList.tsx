@@ -15,7 +15,7 @@ const ExperiencesList: React.FunctionComponent<ExperiencesListProps> = () => {
   return (
     <Section
       className={"experiences"}
-      title={t("experience")}
+      title={t("experiences")}
       icon={faGlobeEurope}
     >
       {experiences.map((e) =>
