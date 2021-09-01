@@ -22,7 +22,7 @@ export const personalData: PersonalDataType = {
   },
   license: {
     fr: "Permis de conduire, véhicule personnel",
-    en: "Driver license, personnal car",
+    en: "Driver license, personal car",
   },
   personalFooterIcon: faMotorcycle,
   personalFooterNote: {
