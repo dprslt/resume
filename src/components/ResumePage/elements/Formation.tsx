@@ -7,7 +7,7 @@ type FormationProps = {
   data: FormationType;
 };
 
-const Formation: React.FunctionComponent<FormationProps> = ({ data }) => {
+const Formation: React.FunctionComponent<React.PropsWithChildren<FormationProps>> = ({ data }) => {
   const { t } = useTranslation(); 
 
   return (

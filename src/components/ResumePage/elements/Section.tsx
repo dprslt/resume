@@ -9,7 +9,7 @@ type SectionProps = {
   className: string;
 };
 
-const Section: React.FunctionComponent<SectionProps> = ({
+const Section: React.FunctionComponent<React.PropsWithChildren<SectionProps>> = ({
   title,
   icon,
   children,

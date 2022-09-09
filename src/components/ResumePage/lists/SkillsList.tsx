@@ -6,7 +6,7 @@ import Skill from "../elements/Skill";
 
 type SkillsListProps = {};
 
-const SkillsList: React.FunctionComponent<SkillsListProps> = () => {
+const SkillsList: React.FunctionComponent<React.PropsWithChildren<SkillsListProps>> = () => {
   const { t } = useTranslation(); 
   const i18nOpener = useI18nTextOpener();
 

@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 type SideProjectsListProps = {};
 
-const SideProjectsList: React.FunctionComponent<SideProjectsListProps> = () => {
+const SideProjectsList: React.FunctionComponent<React.PropsWithChildren<SideProjectsListProps>> = () => {
   const { t } = useTranslation(); 
   const i18nOpener = useI18nTextOpener();
 

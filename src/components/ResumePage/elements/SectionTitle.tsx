@@ -9,7 +9,7 @@ type SectionTitleProps = {
   icon: IconProp;
 };
 
-const SectionTitle: React.FunctionComponent<SectionTitleProps> = ({
+const SectionTitle: React.FunctionComponent<React.PropsWithChildren<SectionTitleProps>> = ({
   title,
   icon,
 }) => {

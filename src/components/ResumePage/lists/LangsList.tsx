@@ -5,7 +5,7 @@ import I18nTextNode from "../../I18nTextNode";
 
 type LangsListProps = {};
 
-const LangsList: React.FunctionComponent<LangsListProps> = () => {
+const LangsList: React.FunctionComponent<React.PropsWithChildren<LangsListProps>> = () => {
   return (
     <div className={"langs col-section"}>
       <div className={"lang"}>

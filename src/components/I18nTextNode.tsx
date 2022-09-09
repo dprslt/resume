@@ -6,7 +6,7 @@ interface I18nTextNodeProps {
   text: I18nText;
 }
 
-const I18nTextNode: FC<I18nTextNodeProps> = ({ text }) => {
+const I18nTextNode: FC<React.PropsWithChildren<I18nTextNodeProps>> = ({ text }) => {
   const { i18n } = useTranslation();
   const lang = i18n.language as Lang;
   if (typeof text === "string") {

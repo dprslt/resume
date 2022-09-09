@@ -8,7 +8,7 @@ import Section from "../elements/Section";
 
 type ExperiencesListProps = {};
 
-const ExperiencesList: React.FunctionComponent<ExperiencesListProps> = () => {
+const ExperiencesList: React.FunctionComponent<React.PropsWithChildren<ExperiencesListProps>> = () => {
   const i18nOpener = useI18nTextOpener();
   const { t } = useTranslation(); 
 

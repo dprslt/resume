@@ -8,7 +8,7 @@ interface BezelProps {
   base: number;
 }
 
-const Bezel: FC<BezelProps> = ({
+const Bezel: FC<React.PropsWithChildren<BezelProps>> = ({
   height,
   color,
   top = false,

@@ -8,7 +8,7 @@ type LangFlagProps = {
   flagLocale: string;
 };
 
-const LangFlag: React.FunctionComponent<LangFlagProps> = ({
+const LangFlag: React.FunctionComponent<React.PropsWithChildren<LangFlagProps>> = ({
   locale,
   flagLocale,
 }) => {

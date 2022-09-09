@@ -8,7 +8,7 @@ import "./setupI18n.ts";
 import { useTranslation } from "react-i18next";
 
 
-const App: FC = () => {
+const App: FC<React.PropsWithChildren<unknown>> = () => {
   const { t } = useTranslation(); 
 
   return (

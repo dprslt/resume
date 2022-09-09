@@ -9,7 +9,7 @@ type SensitiveInfoProps = {
   icon: IconProp;
 };
 
-const SensitiveInfo: React.FunctionComponent<SensitiveInfoProps> = ({
+const SensitiveInfo: React.FunctionComponent<React.PropsWithChildren<SensitiveInfoProps>> = ({
   clear,
   data,
   icon,

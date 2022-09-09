@@ -7,7 +7,7 @@ import Section from "../elements/Section";
 
 type FormationListProps = {};
 
-const FormationList: React.FunctionComponent<FormationListProps> = () => {
+const FormationList: React.FunctionComponent<React.PropsWithChildren<FormationListProps>> = () => {
   const i18nOpener = useI18nTextOpener();
   return (
     <Section

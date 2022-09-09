@@ -4,7 +4,7 @@ import Bezel from "./design/Bezel";
 import I18nTextNode from "../I18nTextNode";
 import PersonnalData from "./PersonnalData";
 
-const Header: React.FunctionComponent = () => {
+const Header: React.FunctionComponent<React.PropsWithChildren<unknown>> = () => {
   return (
     <header>
       <div className={"header-bg"}>

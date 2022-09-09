@@ -7,7 +7,7 @@ type SkillProps = {
   skill: SkillType;
 };
 
-const Skill: React.FunctionComponent<SkillProps> = ({ skill }) => {
+const Skill: React.FunctionComponent<React.PropsWithChildren<SkillProps>> = ({ skill }) => {
   const { t } = useTranslation(); 
 
   return (

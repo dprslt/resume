@@ -6,7 +6,7 @@ type InfoProps = {
   icon: IconProp;
 };
 
-const Info: React.FunctionComponent<InfoProps> = ({ children, icon }) => {
+const Info: React.FunctionComponent<React.PropsWithChildren<InfoProps>> = ({ children, icon }) => {
   return (
     <div className={"info"}>
       <span className={"info-value"}>{children}</span>

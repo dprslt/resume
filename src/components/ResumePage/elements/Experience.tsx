@@ -7,7 +7,7 @@ type ExperienceProps = {
   data: ExperienceType;
 };
 
-const Experience: React.FunctionComponent<ExperienceProps> = ({ data }) => {
+const Experience: React.FunctionComponent<React.PropsWithChildren<ExperienceProps>> = ({ data }) => {
   const { t } = useTranslation(); 
 
   return (

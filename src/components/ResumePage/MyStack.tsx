@@ -9,7 +9,7 @@ import I18nTextNode from "../I18nTextNode";
 
 type MyStackProps = {};
 
-const MyStack: React.FunctionComponent<MyStackProps> = () => {
+const MyStack: React.FunctionComponent<React.PropsWithChildren<MyStackProps>> = () => {
   return (
     <div className={"col-section"}>
       <h2 className={"col-title"}>

@@ -7,7 +7,7 @@ type SideProjectProps = {
   project: SideProjectType;
 };
 
-const SideProject: React.FunctionComponent<SideProjectProps> = ({
+const SideProject: React.FunctionComponent<React.PropsWithChildren<SideProjectProps>> = ({
   project,
 }) => {
   const localeTitle = useI18nText(project.title);

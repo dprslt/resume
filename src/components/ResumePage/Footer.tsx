@@ -7,7 +7,7 @@ import { personalData } from "../../data/theo/personalData";
 
 type FooterProps = {};
 
-const Footer: React.FunctionComponent<FooterProps> = () => {
+const Footer: React.FunctionComponent<React.PropsWithChildren<FooterProps>> = () => {
   return (
     <footer>
       <Bezel height={3} color={"#2b333c"} top={true} right={false} base={1} />
