@@ -5,8 +5,8 @@ export const personalData: PersonalDataType = {
   name: "Théo",
   surname: "Depresle",
   title: {
-    fr: "Ingénieur FullStack",
-    en: "FullStack Engineer",
+    fr: "Full Stack Lead Engineer",
+    en: "Full Stack Lead Engineer",
   },
   phone: {
     target: "phone://+33629325778",
@@ -17,8 +17,8 @@ export const personalData: PersonalDataType = {
     text: "theo.depresle@gmail.com",
   },
   age: {
-    fr: "23 ans",
-    en: "23 years old",
+    fr: "26 ans",
+    en: "26 years old",
   },
   license: {
     fr: "Permis de conduire, véhicule personnel",
@@ -26,8 +26,8 @@ export const personalData: PersonalDataType = {
   },
   personalFooterIcon: faMotorcycle,
   personalFooterNote: {
-    fr: "Tech enthusiast, motard, photographe amateur et DIY",
-    en: "Tech enthusiast, biker, amateur photograph and DIY",
+    fr: "Tech enthusiast, motard, pilote de parapente, photographe amateur et DIY",
+    en: "Tech enthusiast, biker, glider pilot, amateur photograph and DIY",
   },
 
   linkedIn: "https://www.linkedin.com/in/dprslt/",

@@ -5,9 +5,20 @@ import aurora from "../../static/aurora.png";
 import tpth from "../../static/tpth.png";
 import cake from "../../static/cake.png";
 import lego from "../../static/lego.png";
+import pdd from "../../static/icone-pdd.png";
 import { SideProjectType } from "../../types/resume-infos/SideProject";
 
 export const projets: Array<SideProjectType> = [
+  {
+    title: "PDD Parapente",
+    link:
+      "https://pdd.dprslt.fr",
+    shortDescription: {
+      fr: "Conditions de vol au sommet",
+      en: "Flying condition over PDD",
+    },
+    images: [pdd],
+  },
   {
     title: "FindOrDraw",
     link:
@@ -27,15 +38,15 @@ export const projets: Array<SideProjectType> = [
     },
     images: [dsc],
   },
-  {
-    title: "Le Madras",
-    shortDescription: {
-      fr: "Site vitrine pour une patisserie",
-      en: "Showcase website for a French pastry shop",
-    },
-    link: "https://www.patisserie-lemadras.com/",
-    images: [cake],
-  },
+  // {
+  //   title: "Le Madras",
+  //   shortDescription: {
+  //     fr: "Site vitrine pour une patisserie",
+  //     en: "Showcase website for a French pastry shop",
+  //   },
+  //   link: "https://www.patisserie-lemadras.com/",
+  //   images: [cake],
+  // },
   {
     title: "KYChain",
     link:

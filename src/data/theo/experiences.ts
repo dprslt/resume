@@ -4,19 +4,23 @@ export const experiences: Array<ExperienceType> = [
   {
     displayLevel: "full",
     title: {
-      fr: "Développeur web",
-      en: "Frontend engineer",
+      fr: "Tech Lead FullStack",
+      en: "Full Stack Lead Engineer",
     },
     company: "Citopia",
-    place: "Toulouse",
+    place: "Full Remote",
     date: {
       from: "Sept. 2020",
     },
     description: {
       fr:
-        "Architecture et développement du produit GRC360 à destination des communes et des leurs citoyens.",
+        "Développement du produit GRC360 à destination des communes et des leurs citoyens.\n"+
+        "Ré-écriture compléte du produit, automatisation et migration vers une architecture Kubernetes.\n"+
+        "Acccompagnement et formation de l'équipe de développement.",
       en:
-        "Designin and building the GRC360 product to ease dialog between cities and citizens.",
+        "Designing and building the GRC360 product to ease dialog between cities and citizens.\n"+
+        "Full rewrite of the product, migrate to Kubernete with fully automated CI/CD.\n"+
+        "Growing and training of the dev team",
     },
     tech: ["React", "Redux Toolkit", "Leaflet", "NodeJS", "Docker Swarm"],
   },
@@ -40,10 +44,8 @@ export const experiences: Array<ExperienceType> = [
         },
         description: {
           fr:
-            "Participation à la conception de plusieurs projets de développement logiciel.\n" +
             "Co-responsable des développements Frontend pour le projet Européen COMMUTE et pour différents clients grand comptes.",
           en:
-            "Design and implementation of various web solutions\n" +
             "Lead frontend developer for the European project COMMUTE and for other large accounts customers such as EUROCONTROL",
         },
       },
@@ -55,11 +57,9 @@ export const experiences: Array<ExperienceType> = [
         description: {
           fr:
             "Conseil et animation de formations autour de la stack Elastic et de l'acculturation à l'informatique.\n" +
-            "Accompagnement d'équipes de Développeurs et de Data Scientists dans la conception et le déploiement de plateformes de traitement de données.\n" +
             "Automatisation des processus de mise en production (CI/CD).",
           en:
             "Delivering support and animating training session around the Elastic stack and computer science acculturation\n" +
-            "Support teams of Developers and Data Scientists to help them design and deploy data processing solutions\n" +
             "Setup automated production process (DevOps - CI/CD).",
         },
       },
