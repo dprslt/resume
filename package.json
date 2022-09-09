@@ -33,7 +33,7 @@
     "build": "tsc && vite build",
     "ts": "tsc --noEmit -w",
     "serve": "vite preview",
-    "predeploy": "npm run build --base=/resume",
+    "predeploy": "tsc && vite build --base=/resume",
     "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
