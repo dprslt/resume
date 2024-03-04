@@ -11,6 +11,10 @@ export const experiences: Array<ExperienceType> = [
     place: "Full Remote",
     date: {
       from: "Sept. 2020",
+      to: {
+        fr: "Août 2023",
+        en: "Aug 2023",
+      },
     },
     description: {
       fr:
