@@ -16,18 +16,14 @@ export const personalData: PersonalDataType = {
     target: "mail://theo.depresle@gmail.com",
     text: "theo.depresle@gmail.com",
   },
-  age: {
-    fr: "26 ans",
-    en: "26 years old",
-  },
   license: {
     fr: "Permis de conduire, véhicule personnel",
     en: "Driver license, personal car",
   },
   personalFooterIcon: faMotorcycle,
   personalFooterNote: {
-    fr: "Tech enthusiast, motard, pilote de parapente, photographe amateur et DIY",
-    en: "Tech enthusiast, biker, glider pilot, amateur photograph and DIY",
+    fr: "Tech enthusiast, pilote de parapente, motard,  et DIY",
+    en: "Tech enthusiast, glider pilot, biker and DIY",
   },
 
   linkedIn: "https://www.linkedin.com/in/dprslt/",

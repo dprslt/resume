@@ -513,6 +513,10 @@ $light-color: #bfdaf0;
       }
 
       .form-content {
+
+        h3, .secondary {
+          display: inline;
+        }
         h3 {
           font-weight: 600;
           font-size: 1.07rem;

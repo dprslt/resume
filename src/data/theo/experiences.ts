@@ -4,16 +4,38 @@ export const experiences: Array<ExperienceType> = [
   {
     displayLevel: "full",
     title: {
+      fr: "Freelance",
+      en: "Freelance",
+    },
+    company: "Tily",
+    place: "France",
+    date: {
+      from: "2024",
+    },
+    description: {
+      fr:
+        "Développement du produit GRC360 à destination des communes et des leurs citoyens.\n"+
+        "Ré-écriture compléte du produit, automatisation et migration vers une architecture Kubernetes.\n"+
+        "Acccompagnement et formation de l'équipe de développement.",
+      en:
+        "Designing and building the GRC360 product to ease dialog between cities and citizens.\n"+
+        "Full rewrite of the product, migrate to Kubernete with fully automated CI/CD.\n"+
+        "Growing and training of the dev team",
+    },
+  },
+  {
+    displayLevel: "full",
+    title: {
       fr: "Tech Lead FullStack",
       en: "Full Stack Lead Engineer",
     },
     company: "Citopia",
     place: "Full Remote",
     date: {
-      from: "Sept. 2020",
+      from: "2020",
       to: {
-        fr: "Août 2023",
-        en: "Aug 2023",
+        fr: "2023",
+        en: "2023",
       },
     },
     description: {
@@ -37,8 +59,8 @@ export const experiences: Array<ExperienceType> = [
     company: "Sopra Steria Group",
     place: "Toulouse",
     date: {
-      from: "Sept. 2018",
-      to: "Sept. 2020",
+      from: "2018",
+      to: "2020",
     },
     activities: [
       {
@@ -90,10 +112,10 @@ export const experiences: Array<ExperienceType> = [
     company: "EDF R&D",
     place: "Paris Saclay / Palo Alto, USA",
     date: {
-      from: "Sept. 2015",
+      from: "2015",
       to: {
-        fr: "Août 2018",
-        en: "Aug 2018",
+        fr: "2018",
+        en: "2018",
       },
     },
     displayLevel: "compact",

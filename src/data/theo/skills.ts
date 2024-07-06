@@ -6,7 +6,7 @@ export const skills: Array<SkillType> = [
       fr: "Dev Frontend",
       en: "Frontend Dev",
     },
-    xp: 9,
+    xp: 10,
     percentage: 90,
   },
   {
@@ -16,7 +16,12 @@ export const skills: Array<SkillType> = [
   },
   {
     name: "Node JS",
-    xp: 6,
+    xp: 9,
+    percentage: 75,
+  },
+  {
+    name: "Docker & Kubernetes",
+    xp: 7,
     percentage: 75,
   },
   {
@@ -28,10 +33,5 @@ export const skills: Array<SkillType> = [
     name: "AWS",
     xp: 5,
     percentage: 60,
-  },
-  {
-    name: "Docker & Kubernetes",
-    xp: 5,
-    percentage: 75,
   },
 ];
