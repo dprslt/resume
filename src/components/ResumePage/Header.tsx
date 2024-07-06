@@ -30,7 +30,7 @@ const Header: React.FunctionComponent<React.PropsWithChildren<unknown>> = () => 
           <PersonnalData />
         </div>
       </div>
-      <Bezel height={3} color={'#002626'} right={true} base={1} />
+      <Bezel height={3.5} color={'#002626'} right={true} base={1} />
     </header>
   );
 };

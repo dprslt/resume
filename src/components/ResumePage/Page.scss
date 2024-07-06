@@ -287,7 +287,12 @@ $light-color: $light;
 
         padding: 0 1em;
 
-        margin-top: -1.25em;
+        margin-top: -1em;
+
+        margin-top: -1.9em;
+        .col-title {
+          border-top: solid 0.5em $secondary-color;
+        }
 
         .skill {
           &:not(:last-child) {
@@ -337,17 +342,17 @@ $light-color: $light;
             color: $accent-color;
             font-family: "Fredoka", sans-serif;
 
-            font-size: 1rem;
+            font-size: 1em;
             font-weight: 400;
             line-height: 1em;
 
-            padding: 0em 0em 0.2em 0em;
+            padding: 0.55em 0.2em 0.75em 0.2em;
 
             display: flex;
             align-items: center;
             justify-content: center;
 
-            width: 3em;
+            width: 3.75em;
             height: 1em;
 
             text-align: center;
@@ -355,27 +360,27 @@ $light-color: $light;
             position: relative;
           }
 
-          .xp:before {
-            width: 3em;
-            height: 0;
-            border-top: 0.1em solid transparent;
-            border-bottom: 0.1em solid transparent;
-            border-right: 3em solid $main-color;
-            position: absolute;
-            content: "";
-            top: -0.1em;
-            right: 0;
-          }
-          .xp:after {
-            width: 3em;
-            height: 0;
-            content: "";
-            border-bottom: 0.1em solid transparent;
-            border-left: 3em solid $main-color;
-            position: absolute;
-            top: 1em;
-            left: 0;
-          }
+          // .xp:before {
+          //   width: 3em;
+          //   height: 0;
+          //   border-top: 0.1em solid transparent;
+          //   border-bottom: 0.1em solid transparent;
+          //   border-right: 3em solid $main-color;
+          //   position: absolute;
+          //   content: "";
+          //   top: -0.1em;
+          //   right: 0;
+          // }
+          // .xp:after {
+          //   width: 3em;
+          //   height: 0;
+          //   content: "";
+          //   border-bottom: 0.1em solid transparent;
+          //   border-left: 3em solid $main-color;
+          //   position: absolute;
+          //   top: 1em;
+          //   left: 0;
+          // }
         }
       }
 
