@@ -5,6 +5,7 @@ import docker from "../../static/docker.png";
 import mongo from "../../static/mongo.png";
 import node from "../../static/node.png";
 import react from "../../static/react.png";
+import kube from "../../static/k8s.png";
 import I18nTextNode from "../I18nTextNode";
 
 type MyStackProps = {};
@@ -25,15 +26,15 @@ const MyStack: React.FunctionComponent<React.PropsWithChildren<MyStackProps>> = 
         />
         <img src={node} className={"logo-bubble"} alt={"NodeJS"} height={45} />
         <img
-          src={docker}
+          src={kube}
           className={"logo-bubble"}
-          alt={"Docker"}
+          alt={"Kubernetes"}
           height={45}
         />
       </div>
-      <div className={"logo-line"}>
+      {/* <div className={"logo-line"}>
         <img src={mongo} className={""} alt={"Mongo DB"} height={40} />
-      </div>
+      </div> */}
     </div>
   );
 };

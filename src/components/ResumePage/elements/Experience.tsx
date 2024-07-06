@@ -7,26 +7,28 @@ type ExperienceProps = {
   data: ExperienceType;
 };
 
-const Experience: React.FunctionComponent<React.PropsWithChildren<ExperienceProps>> = ({ data }) => {
-  const { t } = useTranslation(); 
+const Experience: React.FunctionComponent<
+  React.PropsWithChildren<ExperienceProps>
+> = ({ data }) => {
+  const { t } = useTranslation();
 
   return (
     <div className={"experience"}>
       <div className={"date"}>
         {data.date.to ? (
           <>
-            {t('from')}{" "}
+            {t("from")}{" "}
             <span className={"from"}>
               <I18nTextNode text={data.date.from} />
             </span>{" "}
-            {t('to')}{" "}
+            {t("to")}{" "}
             <span className={"to"}>
               <I18nTextNode text={data.date.to} />
             </span>
           </>
         ) : (
           <>
-            {t('since')}{" "}
+            {t("since")}{" "}
             <span className={"from"}>
               <I18nTextNode text={data.date.from} />
             </span>
@@ -67,9 +69,11 @@ const Experience: React.FunctionComponent<React.PropsWithChildren<ExperienceProp
                 <h4 className={"act-title"}>
                   <I18nTextNode text={activity.title} />
                 </h4>
-                <p className={"description"}>
-                  <I18nTextNode text={activity.description} />
-                </p>
+                {data.displayLevel === "full" && (
+                  <p className={"description"}>
+                    <I18nTextNode text={activity.description} />
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -77,7 +81,7 @@ const Experience: React.FunctionComponent<React.PropsWithChildren<ExperienceProp
 
         {data.tech && data.displayLevel !== "compact" && (
           <div className={"technologies"}>
-            <p className={"tech-title"}>{t('techs_headers')} :</p>
+            <p className={"tech-title"}>{t("techs_headers")} :</p>
             <p className={"tech-list"}>
               <I18nTextNode text={data.tech.join(", ")} />
             </p>

@@ -170,7 +170,7 @@ $light-color: #bfdaf0;
     .col {
       padding-top: 2em;
       padding-bottom: 1em;
-      margin-bottom: -0.5em;
+      margin-bottom: 0.5em;
 
       display: flex;
       flex-direction: column;
@@ -296,7 +296,7 @@ $light-color: #bfdaf0;
           img {
             border-radius: 50%;
             border: solid 1px $main-color;
-            height: 40px;
+            height: 35px;
           }
 
           img:not(:first-child) {
@@ -338,14 +338,14 @@ $light-color: #bfdaf0;
         align-items: center;
 
         .sec-icon {
-          font-size: 1.75em;
+          font-size: 1.5em;
           opacity: 0.8;
           width: 2rem;
         }
 
         h2 {
           font-variant: small-caps;
-          font-size: 1.75em;
+          font-size: 1.5em;
           font-weight: 600;
           margin: 0 0 0 0.3em;
           color: $main-color;
@@ -498,6 +498,7 @@ $light-color: #bfdaf0;
 
         .tech-list {
           padding-left: 0.5em;
+          font-size: 0.9em;
         }
       }
     }
@@ -513,13 +514,15 @@ $light-color: #bfdaf0;
       }
 
       .form-content {
+        font-size: 0.8em;
 
-        h3, .secondary {
+        h3,
+        .secondary {
           display: inline;
         }
         h3 {
           font-weight: 600;
-          font-size: 1.07rem;
+          font-size: 1.07em;
           position: relative;
           line-height: 1em;
           margin: 0.1em 0;
