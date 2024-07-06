@@ -1,33 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@700&family=Fredoka:wght@300..700&family=Overpass:wght@100..900&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+$dark-green: rgb(0, 38, 38);
+$green: rgb(14, 71, 73);
+$yellow: rgb(255, 215, 37);
+$blue: rgb(29, 154, 170);
+$light: rgb(239, 231, 218);
+
+$background-color: $green;
 
 @media screen {
-
-
   html {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #237760;
+    background-color: $background-color;
     min-width: 23cm;
 
     @-moz-document url-prefix() {
-    & {
-      font-size: 15px;
+      & {
+        font-size: 15px;
+      }
     }
   }
-  }
 
-  html, body, #root{
+  html,
+  body,
+  #root {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -42,35 +51,67 @@ body {
     margin: 0 2em;
   }
 
-  .int{
+  .app-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0em 2em 1em 2em;
+    width: 21cm;
+    padding: 0 1em;
+
+    .tily {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 2em;
+
+      h2 {
+        color: $light;
+        font-family: "Amiko", sans-serif;
+        font-weight: bold;
+        line-height: 1em;
+        margin: 0 0 0 0.25em;
+        display: block;
+        padding-top: 0.15em;
+      }
+
+      .tily-logo {
+        border-radius: 0.15em;
+        height: 1.2em;
+      }
+    }
+  }
+
+  .int {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: end;
     font-size: 1.25em;
-    width: 21cm;
-    padding: 0.5em 1em;
 
-    .lang-btn{
-      .flag-icon{
-        box-shadow: rgba(50,50,50,0.6) 0px 0px 5px;
+    .lang-btn {
+      position: relative;
+      margin-bottom: 0.6em;
+      opacity: 0.6;
+      cursor: pointer;
+
+      .flag-icon {
+        box-shadow: rgba(50, 50, 50, 0.6) 0px 0px 5px;
       }
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-right: 0.5em;
       }
 
-      opacity: 0.6;
-      cursor: pointer;
-      &.selected, &:hover{
+      &.selected,
+      &:hover {
         opacity: 1;
       }
-      position: relative;
-      margin-bottom: 0.60em;
       &.selected::after {
         height: 6px;
         width: 6px;
-        background-color: white;
+        background-color: $yellow;
         border-radius: 50%;
-        content: '';
+        content: "";
         position: absolute;
         bottom: -0.6em;
         left: calc(50% - 3px);
@@ -79,16 +120,14 @@ body {
     }
   }
 
-
   .notes {
-    margin-top: 2em;
+    margin-top: 5em;
     text-align: center;
-    //color: #26292f;
-    color: rgb(227, 227, 227);
+    color: $light;
     font-size: 0.8em;
-    font-weight: 600;
+    font-weight: 400;
     opacity: 0.5;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Overpass", sans-serif;
 
     p {
       margin: 2em 0;
@@ -109,9 +148,8 @@ body {
 }
 
 @media print {
-  .notes {
-    display: none;
-  }
+  .notes,
+  .app-header,
   .int {
     display: none;
   }
@@ -119,5 +157,5 @@ body {
 
 @page {
   margin: 0;
-  size: 'A4';
+  size: "A4";
 }

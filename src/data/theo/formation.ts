@@ -44,7 +44,7 @@ export const formations: Array<FormationType> = [
   },
   {
     title: {
-      fr: "DUT Informatique, Filière Poursuite d'Etudes",
+      fr: "DUT Informatique",
       en: "Technical Degree - Computer Science",
     },
     secondary: {

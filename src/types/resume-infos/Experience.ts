@@ -16,5 +16,5 @@ export interface ExperienceType {
   };
   activities?: Array<ExperienceActivity>;
   displayLevel: "full" | "compact" | "none";
-  tech: Array<string>;
+  tech? : Array<string>;
 }

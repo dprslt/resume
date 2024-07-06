@@ -8,6 +8,7 @@ export const en: ResourceLanguage = {
     to: "to",
     since: "Since",
     techs_headers: "Technologies",
+    header_langs: "Languages",
     experiences: "Experiences",
     exp_year: "year",
     exp_years: "years",

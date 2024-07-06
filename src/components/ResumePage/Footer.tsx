@@ -10,7 +10,7 @@ type FooterProps = {};
 const Footer: React.FunctionComponent<React.PropsWithChildren<FooterProps>> = () => {
   return (
     <footer>
-      <Bezel height={3} color={"#2b333c"} top={true} right={false} base={1} />
+      <Bezel height={3.5} color={"#002626"} top={true} right={false} base={1} />
       <div className={"footer-container"}>
         <div className={"hobbies"}>
           <FontAwesomeIcon

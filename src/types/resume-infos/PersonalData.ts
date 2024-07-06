@@ -13,7 +13,6 @@ export interface PersonalDataType {
 
   phone: TargetableInfo;
   mail: TargetableInfo;
-  age: I18nText;
   license: I18nText;
 
   personalFooterIcon: IconProp;

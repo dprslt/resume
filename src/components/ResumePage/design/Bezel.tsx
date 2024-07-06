@@ -32,7 +32,7 @@ const Bezel: FC<React.PropsWithChildren<BezelProps>> = ({
       id="trapezoid"
       viewBox={`0 0 100 ${height}`}
       preserveAspectRatio="none"
-      width="100%"
+      width="101%"
     >
       <path
         d={`M0,${pos[0]} L100,${pos[1]} L100,${pos[2]} L0,${pos[3]}`}

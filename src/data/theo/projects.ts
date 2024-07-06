@@ -21,11 +21,9 @@ export const projets: Array<SideProjectType> = [
   },
   {
     title: "FindOrDraw",
-    link:
-      "https://play.google.com/store/apps/details?id=com.cognitivecompany.findordraw",
     shortDescription: {
-      fr: "Jeu mobile - Play Store",
-      en: "Mobile game - Play Store",
+      fr: "Jeu mobile",
+      en: "Mobile game",
     },
     images: [findOrDraw],
   },
