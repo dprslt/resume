@@ -59,7 +59,14 @@ $background-color: $green;
     width: 21cm;
     padding: 0.5em 1em;
 
+    margin: 0em 2em 1em 2em;
+
     .lang-btn {
+      position: relative;
+      margin-bottom: 0.6em;
+      opacity: 0.6;
+      cursor: pointer;
+
       .flag-icon {
         box-shadow: rgba(50, 50, 50, 0.6) 0px 0px 5px;
       }
@@ -67,18 +74,14 @@ $background-color: $green;
         margin-right: 0.5em;
       }
 
-      opacity: 0.6;
-      cursor: pointer;
       &.selected,
       &:hover {
         opacity: 1;
       }
-      position: relative;
-      margin-bottom: 0.6em;
       &.selected::after {
         height: 6px;
         width: 6px;
-        background-color: white;
+        background-color: $yellow;
         border-radius: 50%;
         content: "";
         position: absolute;
@@ -90,10 +93,9 @@ $background-color: $green;
   }
 
   .notes {
-    margin-top: 2em;
+    margin-top: 5em;
     text-align: center;
-    //color: #26292f;
-    color: rgb(227, 227, 227);
+    color: $light;
     font-size: 0.8em;
     font-weight: 400;
     opacity: 0.5;

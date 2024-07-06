@@ -8,6 +8,7 @@ export const fr: ResourceLanguage = {
     to: "à",
     since: "Depuis",
     techs_headers: "Technologies",
+    header_langs: "Langues",
     experiences: "Expériences",
     exp_year: "an",
     exp_years: "ans",
@@ -15,7 +16,7 @@ export const fr: ResourceLanguage = {
     header_skills: "Mes compétences",
     contact_me: "Contactez moi !",
     contact_part_1:
-      "Ces informations sont masquées pour "  +
+      "Ces informations sont masquées pour " +
       "éviter d'être récupérées par des robots.",
     contact_part_2: "Cliquez ici pour les afficher.",
   },
