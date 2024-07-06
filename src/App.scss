@@ -51,15 +51,43 @@ $background-color: $green;
     margin: 0 2em;
   }
 
+  .app-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0em 2em 1em 2em;
+    width: 21cm;
+    padding: 0 1em;
+
+    .tily {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 2em;
+
+      h2 {
+        color: $light;
+        font-family: "Amiko", sans-serif;
+        font-weight: bold;
+        line-height: 1em;
+        margin: 0 0 0 0.25em;
+        display: block;
+        padding-top: 0.15em;
+      }
+
+      .tily-logo {
+        border-radius: 0.15em;
+        height: 1.2em;
+      }
+    }
+  }
+
   .int {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: end;
     font-size: 1.25em;
-    width: 21cm;
-    padding: 0.5em 1em;
-
-    margin: 0em 2em 1em 2em;
 
     .lang-btn {
       position: relative;
@@ -120,9 +148,8 @@ $background-color: $green;
 }
 
 @media print {
-  .notes {
-    display: none;
-  }
+  .notes,
+  .app-header,
   .int {
     display: none;
   }
