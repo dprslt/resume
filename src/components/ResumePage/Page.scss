@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
-$main-color: #2b333c;
-$accent-color: #1879bb;
-$light-color: #bfdaf0;
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@700&family=Fredoka:wght@300..700&family=Overpass:wght@100..900&display=swap");
+
+$dark-green: rgb(0, 38, 38);
+$green: rgb(14, 71, 73);
+$yellow: rgb(255, 215, 37);
+$blue: rgb(29, 154, 170);
+$light: rgb(239, 231, 218);
+
+$main-color: $dark-green;
+$secondary-color: $blue;
+$accent-color: $yellow;
+$light-color: $light;
 
 .page {
   @media print {
@@ -16,7 +25,10 @@ $light-color: #bfdaf0;
 
   background-color: white;
 
-  font-family: "Open Sans", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
 
   display: flex;
   flex-direction: column;
@@ -45,7 +57,7 @@ $light-color: #bfdaf0;
       flex-direction: column;
     }
 
-    color: white;
+    color: $light-color;
 
     .header-content {
       align-items: center;
@@ -63,17 +75,31 @@ $light-color: #bfdaf0;
       }
 
       .name {
+        padding: 0.5em 1em 0;
+
         flex: 1;
 
         h1 {
-          font-size: 2.6em;
+          font-family: "Amiko", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+
+          font-size: 2em;
           margin: 0;
+
+          color: $yellow;
         }
 
         h2 {
+          font-family: "Overpass", sans-serif;
+          font-weight: 600;
+          font-style: normal;
+
           margin-bottom: 0;
           margin-top: -0.3em;
-          font-size: 1.85em;
+          font-size: 1.5em;
+
+          text-transform: uppercase;
         }
       }
 
@@ -89,7 +115,7 @@ $light-color: #bfdaf0;
           left: 0;
           height: 100%;
           width: 100%;
-          background-color: rgba(43, 51, 60, 0.8);
+          background-color: rgba(0, 38, 38, 0.8);
           padding: 0 0.5em;
           align-items: center;
           justify-content: center;
@@ -117,10 +143,11 @@ $light-color: #bfdaf0;
         .info {
           margin: 0.1em;
           font-size: 0.8em;
-          opacity: 0.8;
+          // opacity: 0.8;
 
           .info-icon {
             margin: 0 0 0 0.75em;
+            color: $accent-color;
           }
         }
       }
@@ -168,9 +195,9 @@ $light-color: #bfdaf0;
     }
 
     .col {
-      padding-top: 2em;
+      padding-top: 1em;
       padding-bottom: 1em;
-      margin-bottom: 0.5em;
+      margin-bottom: -0.5em;
 
       display: flex;
       flex-direction: column;
@@ -180,18 +207,45 @@ $light-color: #bfdaf0;
       position: relative;
       margin-top: -1.5em;
 
+      overflow: hidden;
+
       .col-section {
-        margin-bottom: 0.5em;
+        // margin-bottom: 0.5em;
         padding: 0.1em 1em;
       }
 
       .col-title {
-        margin: 0 0 0.5em;
-        padding: 0.25em 0;
+        margin: 0.5em 0 1em;
+        padding: 0.5em 0.5em 0.3em 0.5em;
         text-align: center;
         text-transform: uppercase;
         font-size: 1.2em;
+        font-family: "Amiko", sans-serif;
+        font-weight: 700;
         color: $main-color;
+
+        background-color: $main-color;
+        color: $accent-color;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+        transform: rotate(-1.5deg);
+        margin-left: -2rem;
+        margin-right: -2rem;
+
+        // width: 100%;
+
+        // &::before {
+        //   content: "";
+        //   background-color: $main-color;
+
+        //   position: absolute;
+        //   width: 120%;
+        //   height: 2.5em;
+        //   z-index: -1;
+        //   top: -0.4em;
+        //   left: -1em;
+        // }
 
         .red {
           color: #e30e0e;
@@ -233,6 +287,8 @@ $light-color: #bfdaf0;
 
         padding: 0 1em;
 
+        margin-top: -1.25em;
+
         .skill {
           &:not(:last-child) {
             margin-bottom: 0.5em;
@@ -265,12 +321,60 @@ $light-color: #bfdaf0;
             margin: 0.1em 0.1em;
             height: 0.1cm;
             background-color: $main-color;
-            opacity: 0.5;
 
             .progress-bar {
               height: 100%;
-              background-color: $accent-color;
+              background-color: $secondary-color;
+              // opacity: 0.5;
             }
+          }
+        }
+
+        .skill.new-skill {
+          .xp {
+            opacity: 1;
+            background-color: $main-color;
+            color: $accent-color;
+            font-family: "Fredoka", sans-serif;
+
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1em;
+
+            padding: 0em 0em 0.2em 0em;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 3em;
+            height: 1em;
+
+            text-align: center;
+
+            position: relative;
+          }
+
+          .xp:before {
+            width: 3em;
+            height: 0;
+            border-top: 0.1em solid transparent;
+            border-bottom: 0.1em solid transparent;
+            border-right: 3em solid $main-color;
+            position: absolute;
+            content: "";
+            top: -0.1em;
+            right: 0;
+          }
+          .xp:after {
+            width: 3em;
+            height: 0;
+            content: "";
+            border-bottom: 0.1em solid transparent;
+            border-left: 3em solid $main-color;
+            position: absolute;
+            top: 1em;
+            left: 0;
           }
         }
       }
@@ -321,7 +425,8 @@ $light-color: #bfdaf0;
           .secondary {
             margin: 0;
             font-size: 0.75em;
-            line-height: 1em;
+            line-height: 0.9em;
+            font-family: "Fredoka", sans-serif;
             font-weight: 400;
             opacity: 0.6;
           }
@@ -337,17 +442,22 @@ $light-color: #bfdaf0;
         flex-direction: row;
         align-items: center;
 
+        color: $main-color;
+
         .sec-icon {
           font-size: 1.5em;
           opacity: 0.8;
           width: 2rem;
+          margin-bottom: 0.2em;
         }
 
         h2 {
-          font-variant: small-caps;
-          font-size: 1.5em;
+          // font-variant: small-caps;
+          text-transform: uppercase;
+          font-size: 1.2em;
+          font-family: "Overpass", sans-serif;
           font-weight: 600;
-          margin: 0 0 0 0.3em;
+          margin: 0 0 0 0.8em;
           color: $main-color;
         }
       }
@@ -361,7 +471,7 @@ $light-color: #bfdaf0;
         &::before {
           content: "";
           position: absolute;
-          border-left: solid 2px $accent-color;
+          border-left: solid 2px $secondary-color;
           opacity: 0.6;
           left: 0;
           top: 0;
@@ -370,11 +480,12 @@ $light-color: #bfdaf0;
       }
 
       .date {
-        font-weight: 500;
+        font-family: "Fredoka", sans-serif;
+        // font-weight: 500;
         font-size: 0.85em;
-        line-height: 0.8em;
+        line-height: 1em;
 
-        color: $accent-color;
+        color: $secondary-color;
 
         font-variant: all-small-caps;
         text-transform: uppercase;
@@ -382,7 +493,7 @@ $light-color: #bfdaf0;
         .from,
         .to {
           font-variant: normal;
-          font-weight: 600;
+          font-weight: 400;
           margin: 0 0.25em;
         }
       }
@@ -399,7 +510,7 @@ $light-color: #bfdaf0;
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background-color: $accent-color;
+        background-color: $secondary-color;
         opacity: 1;
         position: absolute;
         left: calc(-1em - 2px);
@@ -513,6 +624,10 @@ $light-color: #bfdaf0;
         margin-bottom: 0.75em;
       }
 
+      .date {
+        margin-bottom: 0.2em;
+      }
+
       .form-content {
         font-size: 0.8em;
 
@@ -533,7 +648,7 @@ $light-color: #bfdaf0;
             width: 6px;
             height: 6px;
             border-radius: 50%;
-            background-color: $accent-color;
+            background-color: $secondary-color;
             position: absolute;
             left: calc(-1rem - 2px);
             top: calc(50% - 3px);
@@ -587,7 +702,7 @@ $light-color: #bfdaf0;
     z-index: 600;
 
     .footer-container {
-      color: white;
+      color: $light-color;
       background-color: $main-color;
       display: flex;
       flex-direction: row;
@@ -605,11 +720,11 @@ $light-color: #bfdaf0;
       }
 
       .hobbies {
-        opacity: 0.6;
-
         .icon {
           font-size: 1.3em;
           margin: 0 0.5em;
+
+          color: $accent-color;
         }
 
         p {
@@ -638,7 +753,6 @@ $light-color: #bfdaf0;
           font-size: 0.7em;
           font-weight: 600;
           margin: 0 0.5em;
-          opacity: 0.6;
         }
       }
     }

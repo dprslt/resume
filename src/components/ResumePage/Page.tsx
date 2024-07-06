@@ -11,6 +11,9 @@ import LangsList from "./lists/LangsList";
 import SideProjectsList from "./lists/SideProjectsList";
 import Logos from "./Logos";
 
+// import qrCode from "../../static/qr-code.png";
+
+
 const Page = () => {
   return (
     <div className={"page"}>
@@ -25,6 +28,7 @@ const Page = () => {
           </div>
 
           <div className={"col"}>
+            {/* <img src={qrCode} alt={"QRCodeLinkedin"} height={200} width={200} style={{ alignSelf: "center" }} /> */}
             <SkillsList />
             <SideProjectsList />
             <MyStack />

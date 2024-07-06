@@ -3,8 +3,8 @@ import { SkillType } from "../../types/resume-infos/Skill";
 export const skills: Array<SkillType> = [
   {
     name: {
-      fr: "Dev Frontend",
-      en: "Frontend Dev",
+      fr: "Dev Fullstack",
+      en: "Fullstack Dev",
     },
     xp: 10,
     percentage: 90,

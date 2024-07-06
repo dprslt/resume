@@ -2,8 +2,8 @@ import { faMotorcycle } from "@fortawesome/free-solid-svg-icons";
 import { PersonalDataType } from "../../types/resume-infos/PersonalData";
 
 export const personalData: PersonalDataType = {
-  name: "Théo",
-  surname: "Depresle",
+  name: "THEO",
+  surname: "DEPRESLE",
   title: {
     fr: "Full Stack Lead Engineer",
     en: "Full Stack Lead Engineer",

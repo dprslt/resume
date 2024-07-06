@@ -4,6 +4,9 @@ import Bezel from "./design/Bezel";
 import I18nTextNode from "../I18nTextNode";
 import PersonnalData from "./PersonnalData";
 
+import qrCode from "../../static/qr-code.png";
+
+
 const Header: React.FunctionComponent<React.PropsWithChildren<unknown>> = () => {
 
   const url = new URL(window.location.href);
@@ -13,6 +16,7 @@ const Header: React.FunctionComponent<React.PropsWithChildren<unknown>> = () => 
     <header>
       <div className={"header-bg"}>
         <div className={"header-content"}>
+
           <div className={"name"}>
             <h1>
               {personalData.name} {personalData.surname}
@@ -26,7 +30,7 @@ const Header: React.FunctionComponent<React.PropsWithChildren<unknown>> = () => 
           <PersonnalData />
         </div>
       </div>
-      <Bezel height={3} color={'#2b333c'} right={true} base={1} />
+      <Bezel height={3} color={'#002626'} right={true} base={1} />
     </header>
   );
 };
