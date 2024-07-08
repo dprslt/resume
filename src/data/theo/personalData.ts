@@ -12,14 +12,14 @@ export const personalData: PersonalDataType = {
     target: "phone://+33629325778",
     text: "+33 6 29 32 57 78",
   },
-  // mail: {
-  //   target: "mail://theo.depresle@gmail.com",
-  //   text: "theo.depresle@gmail.com",
-  // },
   mail: {
-    target: "mail://theo@tily.fr",
-    text: "theo@tily.fr",
+    target: "mail://theo.depresle@gmail.com",
+    text: "theo.depresle@gmail.com",
   },
+  // mail: {
+  //   target: "mail://theo@tily.fr",
+  //   text: "theo@tily.fr",
+  // },
   license: {
     fr: "Permis de conduire, véhicule personnel",
     en: "Driver license, personal car",
