@@ -8,7 +8,12 @@ import { useTranslation } from "react-i18next";
 
 
 const PersonnalData = () => {
-  const [clear, setClear] = useState(false);
+
+  const url = new URL(window.location.href);
+  const showData = url.searchParams.get("showData");
+
+
+  const [clear, setClear] = useState(showData ? true : false);
   useEffect(() => {
     window.onbeforeprint = () => {
       setClear(true);

@@ -3,11 +3,14 @@ import { initReactI18next } from "react-i18next";
 import { en } from "./data/en";
 import { fr } from "./data/fr";
 
+const url = new URL(window.location.href);
+const defaultLang = url.searchParams.get("lang");
+
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources: { fr, en },
-    lng: "fr",
+    lng: defaultLang || 'fr',
     fallbackLng: "fr",
     load: "all",
     debug: false,

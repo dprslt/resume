@@ -13,6 +13,9 @@ import tily from "./static/tily.png";
 const App: FC<React.PropsWithChildren<unknown>> = () => {
   const { t } = useTranslation();
 
+  const url = new URL(window.location.href);
+  const defaultLang = url.searchParams.get("lang");
+
   return (
     <div className="App">
 
