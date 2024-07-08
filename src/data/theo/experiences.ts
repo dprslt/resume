@@ -15,12 +15,12 @@ export const experiences: Array<ExperienceType> = [
     activities: [
       {
         title: {
-          fr: "Conseil et Coach technique",
-          en: "Consulting and Technical Advisor",
+          fr: "Architecte et Coach technique",
+          en: "Architect and Technical Advisor",
         },
         description: {
-          fr: "Analyse de besoins et conception / suivi d'architecture pour vos projets",
-          en: "Collecting needs and designing your projects",
+          fr: "Analyse de besoins, conception d'architecture, suivi d'implémentation pour vos projets",
+          en: "Collecting needs, designing your projects and follow up on implementation",
         },
       },
       {
@@ -40,7 +40,7 @@ export const experiences: Array<ExperienceType> = [
         },
         description: {
           fr: "Formation et montée en compétences de vos équipes techniques ou non",
-          en: "Training yours teams, technical or not ",
+          en: "Training yours teams, technically or not ",
         },
       },
     ],
@@ -66,11 +66,12 @@ export const experiences: Array<ExperienceType> = [
         "Ré-écriture compléte du produit, automatisation et migration vers une architecture Kubernetes.\n" +
         "Acccompagnement et formation de l'équipe de développement.",
       en:
-        "Designing and building the GRC360 product to ease dialog between cities and citizens.\n" +
-        "Full rewrite of the product, migrate to Kubernetes with fully automated CI/CD.\n" +
-        "Growing and training of the dev team",
+        "Designing and building the GRC360 product to ease dialog between cities and citizens. Growing and training the dev team.\n" +
+        "Full rewrite of the legacy POC, migrate to Kubernetes in the Cloud with fully automated CI/CD.\n" +
+        "Scaling the platform from <10 to 200+ customers.",
     },
     tech: [
+      "Architecture",
       "React",
       "Redux Toolkit",
       "NodeJS",
