@@ -86,8 +86,35 @@ $background-color: $green;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: end;
+    align-items: center;
     font-size: 1.25em;
+
+    .print-button{
+
+      border: none;
+      overflow: visible;
+      outline: none;
+
+
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+      background-color: $yellow;
+      color: $dark-green;
+
+      font-size: 1em;
+
+      margin-left: 1em;
+      cursor: pointer;
+
+      transition: ease-in-out 0.2s color;
+
+      &:hover{
+        color: $green;
+      }
+
+      
+    }
 
     .lang-btn {
       position: relative;

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import "./App.scss";
 import Page from "./components/ResumePage/Page";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faPrint } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LangFlag from "./components/LangFlag";
 import "./setupI18n.ts";
@@ -25,6 +25,10 @@ const App: FC<React.PropsWithChildren<unknown>> = () => {
         <div className={"int"}>
           <LangFlag locale={"fr"} flagLocale={"fr"} />
           <LangFlag locale={"en"} flagLocale={"us"} />
+
+          <button className="print-button" onClick={() => window.print()} >
+            <FontAwesomeIcon icon={faPrint} />
+          </button>
         </div>
       </div>
 
